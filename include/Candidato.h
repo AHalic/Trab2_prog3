@@ -5,7 +5,6 @@
 #include <string>
 
 #include "../include/Pessoa.h"
-#include "../include/Partido.h"
 
 #include <string>
 
@@ -13,7 +12,7 @@ using namespace std;
 
 class Candidato: Pessoa {
     private:
-        Partido* partido;
+        int partido;
         int id;
         int votosNominais;
         string situacao;
