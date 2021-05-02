@@ -4,8 +4,8 @@
 #include <iostream>
 #include <string>
 
-#include "./include/Partido.h"
-#include "./include/Candidato.h"
+#include "../include/Partido.h"
+#include "../include/Candidato.h"
 
 using namespace std;
 
