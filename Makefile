@@ -16,8 +16,8 @@ INCLUDEDIRS	:= $(shell find $(INCLUDE) -type d)
 # Argumentos utilizados para testar codigo
 
 # Caso teste do pdf
-ARG1 := candidatos.csv
-ARG2 := partidos.csv
+ARG1 := entradas/iuna-candidatos.csv
+ARG2 := entradas/iuna-partidos.csv
 DATE := 15/11/2020
 
  
