@@ -38,16 +38,8 @@ clean:
 
 # Comandos para executar
 run: 
-	./$(EXECUTABLE) $(DIR_ENT0) ./output/
+	./$(EXECUTABLE) $(ARG1) $(ARG2) $(DATE)
 
 	
 $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(CFLAGS) $(CINCLUDES) $^ -o $@ $(LIBRARIES)
-
-# Comandos para executar com valgrind
-val: 
-	# valgrind ./$(EXECUTABLE) $(DIR_ENT0) $(SAIDA)
-	echo "val0"
-
-val0: 
-	valgrind ./$(EXECUTABLE) $(DIR_ENT0)
