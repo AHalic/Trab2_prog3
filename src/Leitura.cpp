@@ -11,6 +11,7 @@ using namespace std;
 
 static Partido* lerPartidoLinha(string linha) {
     stringstream s(linha);
+    Partido* partidoAux = NULL;
 
     string nome, sigla, numeroPartidoStr, votosLegendaStr;
     int numeroPartido, votosLegenda;
@@ -23,7 +24,10 @@ static Partido* lerPartidoLinha(string linha) {
     numeroPartido = atoi(&numeroPartidoStr[0]);
     votosLegenda = atoi(&votosLegendaStr[0]);
 
-    Partido* partidoAux;
+    cout << "Nome: " << nome << endl;
+    cout << "Sigla: " << sigla << endl;
+    cout << "Num: " << numeroPartido << endl;
+    cout << "Votos: " << votosLegenda << endl;
 
     return partidoAux;
 }
@@ -41,6 +45,7 @@ Partido* lerPartidos(string caminho) {
         
         while(getline(fin, linhaAux)) {
             partidoAux = lerPartidoLinha(linhaAux);
+            cout << "\n\n";
         }
     }
     catch (const ifstream::failure& e) {
