@@ -1,3 +1,10 @@
+# Pastas e arquivos desnecessarias
 .DS_Store
 .DS_Store/*
+*.json
+.vscode
 makefile.dms
+
+# Arquivos gerados por c++
+vereadores
+*/*.o
