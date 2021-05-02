@@ -3,8 +3,10 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 #include "../include/Candidato.h"
+#include "../include/Votos.h"
 
 using namespace std;
 
@@ -16,7 +18,7 @@ class Partido {
         vector<Candidato*> candidatos;
         
     public:
-        Pessoa();  
+        Partido();  
         string getNome() const;
         void setNome(string);
 };
