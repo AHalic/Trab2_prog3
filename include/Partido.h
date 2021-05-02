@@ -11,7 +11,7 @@ using namespace std;
 class Partido {
     private: 
         int numero;
-
+        Votos votos;
         string sigla;
         vector<Candidato*> candidatos;
         
