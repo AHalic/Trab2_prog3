@@ -6,8 +6,8 @@ CC		:= g++
 CFLAGS	:= -std=c++11
 
 BIN		:= bin
-SRC		:= .
-INCLUDE	:= .
+SRC		:= src
+INCLUDE	:= include
 
 EXECUTABLE	:= vereadores
 SOURCEDIRS	:= $(shell find $(SRC) -type d)
