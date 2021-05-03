@@ -1,3 +1,4 @@
+reset
 make
 make cleanObjects
-make run
+make run > saida.txt
