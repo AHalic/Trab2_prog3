@@ -1,11 +1,11 @@
 #include "../include/Candidato.h"
-#include "../include/Partido.h"
+
 #include <string>
 #include <iostream>
 
+#include "../include/Partido.h"
 
 using namespace std;
-
 
 Candidato::Candidato(string nome, char genero, time_t nascimento, string situacao, 
                     string nomeUrna, int vT, int numero, string destVoto, Partido* partido) 
