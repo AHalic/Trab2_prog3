@@ -13,6 +13,7 @@ Partido::Partido(string nome, string sigla, int votosLegenda, int numero) {
     this->sigla = sigla;
     this->votos = new Votos(votosLegenda);
     this->numero = numero;
+    this->candidatos; 
 }
 
 string Partido::getNome() const {
@@ -42,9 +43,11 @@ int Partido::getVotosTotais() const {
 int Partido::getQtdVagas() const {
     return vagas;    
 }
-vector <Candidato*> getCandidatos() {
-    
+
+vector <Candidato*> Partido::getCandidatos() const {
+    return candidatos;    
 }
+
 void Partido::setVotosNominais(int votos) {
     this->votos->setVotosNominais(votos);
 }
@@ -53,7 +56,7 @@ void Partido::insereCandidato(Candidato* c) {
     candidatos.insert(candidatos.begin(), c);
 }
 
-string Partido::toString() {
+string Partido::toString() const{
     string fraseCandidatoEleito = " candidato eleito";
     string fraseVoto = " voto";
     string fraseNominal = " nominal";
@@ -74,8 +77,8 @@ string Partido::toString() {
     return out;
 }
 
-bool Partido::comparaVotos(Candidato &c1, Candidato &c2) {
-
+bool Partido::comparaVotos(Candidato* c1, Candidato* c2) {
+    return true;
 }
 
 void Partido::ordenaCandidatos() {

@@ -18,9 +18,7 @@ class Partido {
         Votos* votos;
         vector<Candidato*> candidatos;
         int vagas;
-
-        bool comparaVotos(Candidato &c1, Candidato &c2);
-        void ordenaCandidatos();  
+        static bool comparaVotos(Candidato* c1, Candidato* c2);
 
     public:
         Partido(string nome, string sigla, int votosLegenda, int numero);  
@@ -36,8 +34,10 @@ class Partido {
         
         void setVotosNominais(int votos);
 
+        string toString() const;
+
         void insereCandidato(Candidato* c);
-        string toString();
+        void ordenaCandidatos();  
 };
 
 #endif
