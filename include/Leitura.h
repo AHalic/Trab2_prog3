@@ -3,13 +3,14 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 #include "../include/Partido.h"
 #include "../include/Candidato.h"
 
 using namespace std;
 
-Partido* lerPartidos(string caminho);
-Candidato* lerCandidatos(string caminho);
+vector<Partido*> lePartidos(string caminho);
+vector<Candidato*> leCandidatos(string caminho);
 
 #endif
