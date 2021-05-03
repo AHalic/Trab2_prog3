@@ -8,8 +8,12 @@
 #include <vector>
 
 #include "../include/Verificador.h"
+#include "../include/DateUtils.h"
+#include "../include/Candidato.h"
+#include "../include/Partido.h"
 
 using namespace std;
+using namespace cpp_util;
 
 static Partido* criaPartido(string linha, int contador) {
     stringstream s(linha);
@@ -89,16 +93,18 @@ vector<Partido*> lePartidos(string caminho) {
     return partidos;
 }
 
-static Candidato* criaCandidato(string linha, int contador) {
+static Candidato* criaCandidato(string linha, int contador, vector<Partido*> partidos) {
     stringstream s(linha);
-    Candidato* candidatoAux = NULL;
 
     string nome, nomeUrna;
-    string genero, dataNascStr;
+    string generoStr, dataNascStr;
     string numeroIdStr, votosNominaisStr, numeroPartidoStr;
     string situacao, destinoVoto;
 
+    Partido* partidoAux = NULL;
     int numeroId, votosNominais, numeroPartido;
+    time_t dataNasc;
+    char genero;
 
     try {
         getline(s, numeroIdStr, ',');
@@ -106,14 +112,15 @@ static Candidato* criaCandidato(string linha, int contador) {
         getline(s, situacao, ',');
         getline(s, nome, ',');
         getline(s, nomeUrna, ',');
-        getline(s, genero, ',');
+        getline(s, generoStr, ',');
         getline(s, dataNascStr, ',');
         getline(s, destinoVoto, ',');
         getline(s, numeroPartidoStr, ',');
 
-        if (!linhaCandidatoValida(numeroIdStr, votosNominaisStr, situacao, nome, nomeUrna, genero, dataNascStr, destinoVoto, numeroPartidoStr))
+        if (!linhaCandidatoValida(numeroIdStr, votosNominaisStr, situacao, nome, nomeUrna, generoStr, dataNascStr, destinoVoto, numeroPartidoStr))
             throw runtime_error("Linha não contém todas informações necessárias de um candidato!");
         
+        genero = generoStr[0];
     } catch (exception &e) {
         cerr << "Erro ao usar o getline: " << e.what() << endl;
         cerr << "Problema encontrado na linha: " << contador << endl;
@@ -130,10 +137,43 @@ static Candidato* criaCandidato(string linha, int contador) {
         return NULL;
     }
 
+    try {
+        if (!validDate(dataNascStr)) {
+            throw runtime_error("Data de nascimendo inválida.");
+        }
+
+        dataNasc = parseDate(dataNascStr);
+    } catch (exception &e) {
+        cerr << e.what() << endl;
+        cerr << "Problema encontrado na linha: " << contador << endl;
+        return NULL;
+    }
+
+    try {
+        for (Partido* p: partidos) {
+            if (p->getNumero() == numeroPartido) {
+                partidoAux = p;
+                break;
+            }
+        }
+
+        if(!partidoAux)
+            throw("Não foi encontrado o partido no vetor de partidos!");
+
+    } catch (exception &e) {
+        cerr << e.what() << endl;
+        cerr << "Problema encontrado na linha: " << contador << endl;
+        return NULL;
+    }
+
+    Candidato* candidatoAux = new Candidato(nome, genero, dataNasc, situacao, nomeUrna, votosNominais, numeroId, destinoVoto, partidoAux);
+    if(candidatoAux->ehValido())
+        partidoAux->insereCandidato(candidatoAux);
+
     return candidatoAux;
 }
 
-vector<Candidato*> leCandidatos(string caminho) {
+vector<Candidato*> leCandidatos(string caminho, vector<Partido*> partidos) {
     ifstream fin;
     string linhaAux;
     Candidato* candidatoAux;
@@ -164,7 +204,7 @@ vector<Candidato*> leCandidatos(string caminho) {
         // ler proximas linhas
         while(getline(fin, linhaAux)) {
             contador++;                                        // contador de partidos
-            candidatoAux = criaCandidato(linhaAux, contador);      // ler linha e cria um partido
+            candidatoAux = criaCandidato(linhaAux, contador, partidos);      // ler linha e cria um partido
             
             if (candidatoAux)
                 candidatos.insert(candidatos.begin(), candidatoAux); // adiciona partido a vetor caso nao for vazio
