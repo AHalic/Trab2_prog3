@@ -40,4 +40,6 @@ class Partido {
         void ordenaCandidatos();  
 };
 
+ostream& operator << (ostream &os, const Partido *p);
+
 #endif

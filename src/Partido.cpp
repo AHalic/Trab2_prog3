@@ -56,6 +56,7 @@ void Partido::insereCandidato(Candidato* c) {
     candidatos.insert(candidatos.begin(), c);
 }
 
+
 string Partido::toString() const{
     string fraseCandidatoEleito = " candidato eleito";
     string fraseVoto = " voto";
@@ -83,5 +84,25 @@ bool Partido::comparaVotos(Candidato* c1, Candidato* c2) {
 
 void Partido::ordenaCandidatos() {
     sort(candidatos.begin(), candidatos.end(), comparaVotos);
+}
+
+ostream& operator << (ostream &os, const Partido* p) {
+    string fraseCandidatoEleito = " candidato eleito";
+    string fraseVoto = " voto";
+    string fraseNominal = " nominal";
+
+    if (p->getQtdVagas() > 1) 
+        fraseCandidatoEleito = " candidatos eleitos";
+
+    if (p->getVotosTotais() > 1)
+        fraseVoto = " votos";
+
+    if (p->getVotosNominais() > 1)
+        fraseNominal = " nominais";
+
+	return (os << p->getSigla() << " - " << to_string(p->getNumero()) << ", " << to_string(p->getVotosTotais()) << 
+                 fraseVoto << " (" << to_string(p->getVotosNominais()) << fraseNominal << " e " << 
+                 to_string(p->getVotosLegenda()) << " de legenda), " << to_string(p->getQtdVagas()) << fraseCandidatoEleito);
+
 }
         
