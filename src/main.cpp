@@ -20,6 +20,10 @@ int main (int argc, char *argv[]) {
         
         if (partidos.empty())
             throw domain_error("Partidos vazios");
+
+        for (Partido* aux : partidos) {
+            cout << aux->toString() << endl;
+        }
         
         vector<Candidato*> candidatos = leCandidatos(caminhoCandidato);
 
