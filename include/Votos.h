@@ -9,6 +9,7 @@ class Votos {
 
     public:
         Votos(int votosLegenda);
+        Votos(int votosLegenda, int votosNominais);
         Votos();
 
         int getVotosLegenda() const;

@@ -1,4 +1,4 @@
-#include "../include/Votos.h"
+    #include "../include/Votos.h"
 
 using namespace std;
 
@@ -6,6 +6,12 @@ Votos::Votos(int votosLegenda) {
     this->votosLegenda = votosLegenda;
     this->votosNominais = 0;
     this->votosTotais = votosLegenda;
+}
+
+Votos::Votos(int votosLegenda, int votosNominais) {
+    this->votosLegenda = votosLegenda;
+    this->votosNominais = votosNominais;
+    this->votosTotais = votosLegenda + votosNominais;
 }
 
 Votos::Votos() {
