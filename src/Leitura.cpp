@@ -7,6 +7,8 @@
 #include <ctime>
 #include <vector>
 
+#include "../include/Verificador.h"
+
 using namespace std;
 
 static Partido* criaPartido(string linha, int contador) {
@@ -21,9 +23,8 @@ static Partido* criaPartido(string linha, int contador) {
         getline(s, nome, ',');
         getline(s, sigla, ',');
 
-        if (numeroPartidoStr.empty() || votosLegendaStr.empty() || nome.empty() || sigla.empty()) {
+        if (!linhaPartidoValida(numeroPartidoStr, votosLegendaStr, nome, sigla))
             throw runtime_error("Linha não contém todas informações necessárias de um partido!");
-        }
 
     } catch (exception &e) {
         cerr << "Erro ao usar o getline: " << e.what() << endl;
@@ -62,7 +63,12 @@ vector<Partido*> lePartidos(string caminho) {
         // verifica se o cabecalho esta vazio 
         if (linhaAux.empty()) {
             throw runtime_error("Arquivo vazio");
-        }        
+        }
+
+        // verifica se tem todos os atributos
+        if(!PartidoHeaderValido(linhaAux)) {
+            throw runtime_error("Arquivo csv não possui todas as caracteristicas de partido.");
+        }
 
         // ler proximas linhas
         while(getline(fin, linhaAux)) {
@@ -103,10 +109,8 @@ static Candidato* criaCandidato(string linha, int contador) {
         getline(s, destinoVoto, ',');
         getline(s, numeroPartidoStr, ',');
 
-        if (numeroIdStr.empty() || votosNominaisStr.empty() || situacao.empty() || nome.empty() || nomeUrna.empty() ||
-            genero.empty() || dataNascStr.empty() || destinoVoto.empty() || numeroPartidoStr.empty()) {
+        if (!linhaCandidatoValida(numeroIdStr, votosNominaisStr, situacao, nome, nomeUrna, genero, dataNascStr, destinoVoto, numeroPartidoStr))
             throw runtime_error("Linha não contém todas informações necessárias de um candidato!");
-        }
         
     } catch (exception &e) {
         cerr << "Erro ao usar o getline: " << e.what() << endl;
@@ -149,6 +153,12 @@ vector<Candidato*> leCandidatos(string caminho) {
             throw runtime_error("Arquivo vazio");
         }        
 
+        // verifica se tem todos atributos
+        if(!CandidatoHeaderValido(linhaAux)) {
+            throw runtime_error("Arquivo csv não possui todas as caracteristicas de candidato.");
+        }
+
+
         // ler proximas linhas
         while(getline(fin, linhaAux)) {
             contador++;                                        // contador de partidos
@@ -159,7 +169,7 @@ vector<Candidato*> leCandidatos(string caminho) {
         }
     }
     catch (exception &e) {
-        cerr << "Problemas com IO: " << e.what() << endl;
+        cerr << "Exceção encontrada! " << e.what() << endl;
     }
 
     fin.close();
