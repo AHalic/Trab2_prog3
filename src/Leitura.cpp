@@ -41,6 +41,8 @@ static Partido* criaPartido(string linha, int contador) {
         return NULL;
     }
 
+    partidoAux = new Partido(nome, sigla, votosLegenda, numeroPartido);
+
     return partidoAux;
 }
 
