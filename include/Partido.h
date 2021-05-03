@@ -12,15 +12,32 @@ using namespace std;
 
 class Partido {
     private: 
-        int numero;
-        Votos votos;
+        string nome;
         string sigla;
+        int numero;
+        Votos* votos;
         vector<Candidato*> candidatos;
-        
+        int vagas;
+
+        bool comparaVotos(Candidato &c1, Candidato &c2);
+        void ordenaCandidatos();  
+
     public:
-        Partido();  
+        Partido(string nome, string sigla, int votosLegenda, int numero);  
+        
         string getNome() const;
-        void setNome(string);
+        string getSigla() const;
+        int getNumero() const;
+        int getVotosNominais() const;
+        int getVotosLegenda() const;
+        int getVotosTotais() const;
+        int getQtdVagas() const;
+        vector <Candidato*> getCandidatos() const;
+        
+        void setVotosNominais(int votos);
+
+        void insereCandidato(Candidato* c);
+        string toString();
 };
 
 #endif
