@@ -1,3 +1,11 @@
+/**
+ *  DateUtils.h
+ *  Utility functions for date manipulation.
+ *
+ *  @author Vítor E. Silva Souza (vitorsouza@gmail.com)
+ *  @since Jul 9, 2014
+**/
+
 #ifndef DATEUTILS_H
 #define DATEUTILS_H
 

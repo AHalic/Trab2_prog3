@@ -1,3 +1,11 @@
+/**
+ *  DateUtils.cpp
+ *  Utility functions for date manipulation.
+ *
+ *  @author Vítor E. Silva Souza (vitorsouza@gmail.com)
+ *  @since Jul 9, 2014
+**/
+
 #include <iostream>
 #include "../include/DateUtils.h"
 
