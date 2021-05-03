@@ -32,8 +32,6 @@ bool CandidatoHeaderValido(string linha) {
         contador++;
     }
 
-    cout << "cand: " << contador << endl;
-
     if(contador == 9)
         return true;
     
@@ -48,8 +46,6 @@ bool PartidoHeaderValido(string linha) {
     while(getline(s, aux, ',')) {
         contador++;
     }
-
-    cout << "par: " << contador << endl;
 
     if(contador == 4)
         return true;
