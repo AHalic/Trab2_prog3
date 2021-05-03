@@ -8,3 +8,5 @@ makefile.dms
 # Arquivos gerados por c++
 vereadores
 */*.o
+*.out
+teste
