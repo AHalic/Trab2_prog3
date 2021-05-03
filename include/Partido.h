@@ -5,9 +5,10 @@
 #include <string>
 #include <vector>
 
-#include "../include/Candidato.h"
+// #include "../include/Candidato.h"
 #include "../include/Votos.h"
 
+class Candidato;
 using namespace std;
 
 class Partido {
@@ -30,7 +31,7 @@ class Partido {
         int getVotosLegenda() const;
         int getVotosTotais() const;
         int getQtdVagas() const;
-        vector <Candidato*> getCandidatos() const;
+        vector<Candidato*> getCandidatos() const;
         
         void setVotosNominais(int votos);
 

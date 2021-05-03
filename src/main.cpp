@@ -39,13 +39,16 @@ int main (int argc, char *argv[]) {
     }
     */
 
-    /*
+
     // Teste de Pessoa
     time_t niver = parseDate("22/07/1998");
     time_t hoje = parseDate("03/05/2021");
-    Pessoa* p = new Pessoa("bea maia", 'F', niver);
-    cout << "pessoa: "<< p << endl;
-    cout << p->calculaIdade(hoje) << endl;
-    */
+    Partido* p = new Partido("Partido da Sophie", "SP", 3, 1);
+    Candidato* c = new Candidato("Sophie", 'F', niver, "Eleito", "Halic", 35, 11111, "Eleito", p);
+    // Pessoa* p = new Pessoa("bea maia", 'F', niver);
+    // cout << "pessoa: "<< p << endl;
+    // cout << p->calculaIdade(hoje) << endl;
+    cout << c << endl;
+
     return 0;
 }

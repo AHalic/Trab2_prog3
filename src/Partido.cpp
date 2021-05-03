@@ -1,5 +1,6 @@
 #include "../include/Partido.h"
 
+#include <iostream>
 #include <algorithm>
 #include <string>
 
@@ -13,7 +14,7 @@ Partido::Partido(string nome, string sigla, int votosLegenda, int numero) {
     this->sigla = sigla;
     this->votos = new Votos(votosLegenda);
     this->numero = numero;
-    this->candidatos; 
+    // this->candidatos; 
 }
 
 string Partido::getNome() const {
@@ -44,7 +45,7 @@ int Partido::getQtdVagas() const {
     return vagas;    
 }
 
-vector <Candidato*> Partido::getCandidatos() const {
+vector<Candidato*> Partido::getCandidatos() const {
     return candidatos;    
 }
 
