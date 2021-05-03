@@ -14,7 +14,7 @@ Partido::Partido(string nome, string sigla, int votosLegenda, int numero) {
     this->sigla = sigla;
     this->votos = new Votos(votosLegenda);
     this->numero = numero;
-    // this->candidatos; 
+    this->vagas = 0;
 }
 
 string Partido::getNome() const {
@@ -55,6 +55,11 @@ void Partido::setVotosNominais(int votos) {
 
 void Partido::insereCandidato(Candidato* c) {
     candidatos.insert(candidatos.begin(), c);
+    int votosNominais = c->getVotosTotal() + votos->getVotosNominais();    
+    this->setVotosNominais(votosNominais);
+
+    if(c->ehEleito()) 
+        vagas++;
 }
 
 
@@ -80,7 +85,16 @@ string Partido::toString() const{
 }
 
 bool Partido::comparaVotos(Candidato* c1, Candidato* c2) {
-    return true;
+    int votos1 = c1->getVotosTotal();
+    int votos2 = c2->getVotosTotal();
+
+    if (votos1 > votos2) 
+        return -1;
+    else if (votos1 == votos2) {
+        if (c1->getNascimento() < c2->getNascimento())
+            return -1;
+    }
+    return 1;
 }
 
 void Partido::ordenaCandidatos() {
