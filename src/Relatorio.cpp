@@ -5,6 +5,13 @@
 
 using namespace std;
 
+/**
+ * Metodo para calcular a porcentagem e converter para String. Usa "," como separador das 
+ *  casa decimais.
+ * @param valor Valor o qual quer saber a porcentagem
+ * @param total A quantidade total
+ * @return porcentagem da razao valor/total (max 100)
+ */
 static float calculaPorcentagem(int valor, int total) {
     float porcentagem = (float) valor / (float) total;
     return porcentagem * 100;    
@@ -32,7 +39,6 @@ void mostraVereadoresEleitos(Eleicao eleicao) {
     cout << endl;
 }
 
-// errado
 void mostraCandidatosMaisVotados(Eleicao eleicao) {
     int contador = 1;
 
