@@ -12,6 +12,5 @@ vereadores
 teste
 
 # Arquivos e pasta do CLion
-CMakeLists.txt
 cmake-build-debug
 .idea
