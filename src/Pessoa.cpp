@@ -10,7 +10,6 @@
 #include "../include/Pessoa.h"
 #include <string>
 
-using namespace std;
 
 Pessoa::Pessoa(string nome, char genero, time_t nascimento) {
     this->genero = genero;
