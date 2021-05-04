@@ -60,20 +60,18 @@ int main (int argc, char *argv[]) {
         return 1;
     }
 
-    Eleicao* eleicao = new Eleicao(dataEleicao, partidos, candidatos);
+    Eleicao eleicao = Eleicao(dataEleicao, partidos, candidatos);
 
-    eleicao->ordenaCandidatos();
-        
-    mostraNumeroVagas(*eleicao);
-    mostraVereadoresEleitos(*eleicao);
-    mostraCandidatosMaisVotados(*eleicao);
-    int nEleitos = mostraNaoEleitoMajoritario(*eleicao);
-    mostraEleitosBeneficiados(*eleicao, nEleitos);
-    mostraInfoPartido(*eleicao);
-    mostraPrimeiroUltimoPartido(*eleicao);
-    mostraEleitosPorIdade(*eleicao);
-    mostraeleitosPorGenero(*eleicao);
-    mostraVotosEleicao(*eleicao);
+    mostraNumeroVagas(eleicao);
+    mostraVereadoresEleitos(eleicao);
+    mostraCandidatosMaisVotados(eleicao);
+    int nEleitos = mostraNaoEleitoMajoritario(eleicao);
+    mostraEleitosBeneficiados(eleicao, nEleitos);
+    mostraInfoPartido(eleicao);
+    mostraPrimeiroUltimoPartido(eleicao);
+    mostraEleitosPorIdade(eleicao);
+    mostraeleitosPorGenero(eleicao);
+    mostraVotosEleicao(eleicao);
     
     return 0;
 }

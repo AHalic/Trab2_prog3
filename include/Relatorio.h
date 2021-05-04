@@ -21,7 +21,7 @@ using namespace std;
  * Mostra no terminal a quantidade de vagas na eleicao.
  * @param {eleicao} eleicao com todas informacoes importantes 
  */
-void mostraNumeroVagas(Eleicao eleicao);
+void mostraNumeroVagas(Eleicao &eleicao);
 
 /**
  * Relatorio 2 
@@ -29,7 +29,7 @@ void mostraNumeroVagas(Eleicao eleicao);
  * Mostra os vereadores eleitos.
  * @param {eleicao} eleicao com todas informacoes importantes
  */
-void mostraVereadoresEleitos(Eleicao eleicao);
+void mostraVereadoresEleitos(Eleicao &eleicao);
 
 /**
  * Relatorio 3 
@@ -37,7 +37,7 @@ void mostraVereadoresEleitos(Eleicao eleicao);
  * Mostra os candidatos mais votados dentro da quantidade de vagas.
  * @param {eleicao} eleicao com todas informacoes importantes
  */
-void mostraCandidatosMaisVotados(Eleicao eleicao);
+void mostraCandidatosMaisVotados(Eleicao &eleicao);
 
 /**
  * Relatorio 4 
@@ -48,7 +48,7 @@ void mostraCandidatosMaisVotados(Eleicao eleicao);
  * 
  * @return Numero de pessoas eleitas dentro dos votos majoritarios.
  */
-int mostraNaoEleitoMajoritario(Eleicao eleicao);
+int mostraNaoEleitoMajoritario(Eleicao &eleicao);
 
 /**
  * Relatorio 5 
@@ -57,7 +57,7 @@ int mostraNaoEleitoMajoritario(Eleicao eleicao);
  * @param {eleicao} eleicao com todas informacoes importantes
  * @param {nEleitos} quantidade de pessoas eleitas dentro dos votos majoritarios
  */
-void mostraEleitosBeneficiados(Eleicao eleicao, int nEleitos);    
+void mostraEleitosBeneficiados(Eleicao &eleicao, int nEleitos);
 
 /**
 * Relatorio 6 
@@ -65,7 +65,7 @@ void mostraEleitosBeneficiados(Eleicao eleicao, int nEleitos);
 * Mostra informacao de cada partido. Votacao e o numero de candidatos eleitos.
 * @param {eleicao} eleicao com todas informacoes importantes
 */
-void mostraInfoPartido(Eleicao eleicao);
+void mostraInfoPartido(Eleicao &eleicao);
 
 /**
  * Relatorio 7 
@@ -73,7 +73,7 @@ void mostraInfoPartido(Eleicao eleicao);
  * Mostra primeiro e ultimo colocados de cada partido, ordenado por votos.
  * @param {eleicao} eleicao com todas informacoes importantes
  */
-void mostraPrimeiroUltimoPartido(Eleicao eleicao);
+void mostraPrimeiroUltimoPartido(Eleicao &eleicao);
 
 /**
  * Relatorio 8 
@@ -88,7 +88,7 @@ void mostraPrimeiroUltimoPartido(Eleicao eleicao);
  * 
  * @param {eleicao} eleicao com todas informacoes importantes
  */
-void mostraEleitosPorIdade(Eleicao eleicao);
+void mostraEleitosPorIdade(Eleicao &eleicao);
 
 /**
  * Relatorio 9 
@@ -96,7 +96,7 @@ void mostraEleitosPorIdade(Eleicao eleicao);
  * Mostra a quantidade eleitos por genero (apenas feminino e masculino).
  * @param {eleicao} eleicao com todas informacoes importantes
 */
-void mostraeleitosPorGenero(Eleicao eleicao);
+void mostraeleitosPorGenero(Eleicao &eleicao);
 
 /**
  * Relatorio 10 
@@ -104,6 +104,6 @@ void mostraeleitosPorGenero(Eleicao eleicao);
  * Mostra a quantidade de votos validos, nominais e de legenda
  * @param {eleicao} eleicao com todas informacoes importantes
  */
-void mostraVotosEleicao(Eleicao eleicao);
+void mostraVotosEleicao(Eleicao &eleicao);
 
 #endif

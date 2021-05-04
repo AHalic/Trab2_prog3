@@ -17,12 +17,12 @@ static float calculaPorcentagem(int valor, int total) {
     return porcentagem * 100;    
 }
 
-void mostraNumeroVagas(Eleicao eleicao) {
+void mostraNumeroVagas(Eleicao &eleicao) {
     cout << "Número de vagas: " << eleicao.getVagas() << endl;
     cout << endl;
 }
 
-void mostraVereadoresEleitos(Eleicao eleicao) {
+void mostraVereadoresEleitos(Eleicao &eleicao) {
     int contador = 1;
 
     cout << "Vereadores eleitos:" << endl;
@@ -39,7 +39,7 @@ void mostraVereadoresEleitos(Eleicao eleicao) {
     cout << endl;
 }
 
-void mostraCandidatosMaisVotados(Eleicao eleicao) {
+void mostraCandidatosMaisVotados(Eleicao &eleicao) {
     int contador = 1;
 
     cout << "Candidatos mais votados (em ordem decrescente de votação e respeitando número de vagas):" << endl;
@@ -55,7 +55,7 @@ void mostraCandidatosMaisVotados(Eleicao eleicao) {
     cout << endl;
 }
 
-int mostraNaoEleitoMajoritario(Eleicao eleicao) {
+int mostraNaoEleitoMajoritario(Eleicao &eleicao) {
     int contador = 1;
     int nEleitos = 0;
 
@@ -79,7 +79,7 @@ int mostraNaoEleitoMajoritario(Eleicao eleicao) {
     return nEleitos;
 }
 
-void mostraEleitosBeneficiados(Eleicao eleicao, int nEleitos) {
+void mostraEleitosBeneficiados(Eleicao &eleicao, int nEleitos) {
     int contador = 1, eleitos = 0;
 
     cout << "Eleitos, que se beneficiaram do sistema proporcional:" << endl;
@@ -104,7 +104,7 @@ void mostraEleitosBeneficiados(Eleicao eleicao, int nEleitos) {
 }
 
 // precisa ta ordenado
-void mostraInfoPartido(Eleicao eleicao) {
+void mostraInfoPartido(Eleicao &eleicao) {
     int contador = 1;
 
     cout << "Votação dos partidos e número de candidatos eleitos:" << endl;
@@ -118,7 +118,7 @@ void mostraInfoPartido(Eleicao eleicao) {
 }
 
 // precisa ordenar
-void mostraPrimeiroUltimoPartido(Eleicao eleicao) {
+void mostraPrimeiroUltimoPartido(Eleicao &eleicao) {
     int cont = 1;
 
     // precisa ordenar
@@ -127,7 +127,7 @@ void mostraPrimeiroUltimoPartido(Eleicao eleicao) {
 
     for (Partido* p: eleicao.getPartidos()) {
         if (p->getVotosTotais() > 0) {
-            cout << cont + " - " << p->getSigla() << " - " << p->getNumero() << ", ";
+            cout << cont << " - " << p->getSigla() << " - " << p->getNumero() << ", ";
 
             if (!p->getCandidatos().empty()) {                
                 Candidato* prim = p->getCandidatos().front();
@@ -145,11 +145,11 @@ void mostraPrimeiroUltimoPartido(Eleicao eleicao) {
 }
 
 // falta
-void mostraEleitosPorIdade(Eleicao eleicao) {
+void mostraEleitosPorIdade(Eleicao &eleicao) {
 
 }
  
-void mostraeleitosPorGenero(Eleicao eleicao) {
+void mostraeleitosPorGenero(Eleicao &eleicao) {
     int vagas = eleicao.getVagas();
     int F = eleicao.getFEleitas();
     int M = vagas - F;
@@ -170,7 +170,7 @@ void mostraeleitosPorGenero(Eleicao eleicao) {
     }   
 }
 
-void mostraVotosEleicao(Eleicao eleicao) {
+void mostraVotosEleicao(Eleicao &eleicao) {
     int votosNominais = eleicao.getVotosNominais();
     int votosLegenda = eleicao.getVotosLegenda();
     int votosTotais = eleicao.getVotosTotais();
