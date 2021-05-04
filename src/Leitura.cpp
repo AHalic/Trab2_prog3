@@ -176,6 +176,8 @@ static Candidato* criaCandidato(string linha, int contador, vector<Partido*> par
     try {
         if (!ehPositivo(numeroId) || !ehPositivo(numeroPartido) || !ehPositivo(votosNominais))
             throw logic_error("Valores negativos!");
+        if (!generoValido(generoStr))
+            throw logic_error("Gênero não reconhecido!");
     } catch (exception &e) {
         cerr << e.what() << endl;
         cerr << "Problema encontrado na linha: " << contador << endl;
@@ -199,9 +201,11 @@ static Candidato* criaCandidato(string linha, int contador, vector<Partido*> par
         return NULL;
     }
 
-    Candidato* candidatoAux = new Candidato(nome, genero, dataNasc, situacao, nomeUrna, votosNominais, numeroId, destinoVoto, partidoAux);
-    if(candidatoAux->ehValido())
+    Candidato* candidatoAux = NULL;
+    if (destinoValida(destinoVoto)) {
+        candidatoAux = new Candidato(nome, genero, dataNasc, situacao, nomeUrna, votosNominais, numeroId, destinoVoto, partidoAux);
         partidoAux->insereCandidato(candidatoAux);
+    }
 
     return candidatoAux;
 }
