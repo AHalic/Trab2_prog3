@@ -55,6 +55,15 @@ Partido Candidato::getPartido() const{
     return *this->partido;
 }
 
+string Candidato::toString() const {
+    string voto = "voto";
+
+    if (votosTotal > 1)
+        voto = "votos";
+
+    return nomeUrna + " (" + to_string(numero) + ", " + to_string(votosTotal) + " " + voto + ")";
+}
+
 bool comparaVotos(const Candidato *c1, const Candidato *c2) {
     int votos1 = c1->getVotosTotal();
     int votos2 = c2->getVotosTotal();
