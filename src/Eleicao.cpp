@@ -20,7 +20,9 @@ Eleicao::Eleicao(time_t dataEleicao, vector<Partido*> partidos, vector<Candidato
 
     this->setQtdVagas();
     this->setVotosTotais();
-    // this->ordenaCandidatosPorVoto();
+    this->ordenaCandidatos();
+    this->ordenaPartidoCandidatos();
+    // falta ordenar o vetor de partidos
 }
 
         
@@ -83,8 +85,10 @@ int Eleicao::getFEleitas() const {
 }
 
 void Eleicao::ordenaPartidoCandidatos() {
-    for (Partido* aux: this->partidos) {
-        // aux->ordenaCandidatos();
+    if (!this->partidos.empty()) {
+        for (Partido* aux: this->partidos) {
+            aux->ordenaCandidatos();
+        }
     }
 }
 

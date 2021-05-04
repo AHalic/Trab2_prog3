@@ -84,21 +84,22 @@ string Partido::toString() const{
     return out;
 }
 
-bool Partido::comparaVotos(Candidato* c1, Candidato* c2) {
-    int votos1 = c1->getVotosTotal();
-    int votos2 = c2->getVotosTotal();
+// bool Partido::comparaVotos(Candidato* c1, Candidato* c2) {
+//     int votos1 = c1->getVotosTotal();
+//     int votos2 = c2->getVotosTotal();
 
-    if (votos1 > votos2) 
-        return -1;
-    else if (votos1 == votos2) {
-        if (c1->getNascimento() < c2->getNascimento())
-            return -1;
-    }
-    return 1;
-}
+//     if (votos1 > votos2) 
+//         return -1;
+//     else if (votos1 == votos2) {
+//         if (c1->getNascimento() < c2->getNascimento())
+//             return -1;
+//     }
+//     return 1;
+// }
 
 void Partido::ordenaCandidatos() {
-    sort(this->candidatos.begin(), this->candidatos.end(), comparaVotos);
+    if(!this->candidatos.empty())
+        sort(this->candidatos.begin(), this->candidatos.end(), comparaVotos);
 }
 
 ostream& operator << (ostream &os, const Partido* p) {

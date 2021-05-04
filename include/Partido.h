@@ -19,7 +19,7 @@ class Partido {
         Votos* votos;
         vector<Candidato*> candidatos;
         int vagas;
-        static bool comparaVotos(Candidato* c1, Candidato* c2);
+        // static bool comparaVotos(Candidato* c1, Candidato* c2);
 
     public:
         Partido(string nome, string sigla, int votosLegenda, int numero);  
