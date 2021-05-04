@@ -16,7 +16,7 @@ using namespace std;
 class Eleicao {
     private:
         time_t dataEleicao;
-        Votos* votos;
+        Votos votos;
         int vagas;
         vector<Partido*> partidos;
         vector<Candidato*> candidatos;
@@ -24,7 +24,6 @@ class Eleicao {
 
     public:
         Eleicao(time_t dataEleicao, vector<Partido*> partidos, vector<Candidato*> candidatos);
-        
         time_t getDataEleicao() const;
         int getVotosNominais() const;
         int getVotosLegenda() const;

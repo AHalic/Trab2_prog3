@@ -15,7 +15,7 @@ Eleicao::Eleicao(time_t dataEleicao, vector<Partido*> partidos, vector<Candidato
     this->dataEleicao = dataEleicao;
     this->partidos = partidos;
     this->candidatos = candidatos;
-    this->votos = new Votos();
+    this->votos = Votos();
     this->vagas = 0;
 
     this->setQtdVagas();
@@ -31,15 +31,15 @@ time_t Eleicao::getDataEleicao() const {
 }
 
 int Eleicao::getVotosNominais() const {
-    return this->votos->getVotosNominais();
+    return this->votos.getVotosNominais();
 }
 
 int Eleicao::getVotosLegenda() const {
-    return this->votos->getVotosLegenda();
+    return this->votos.getVotosLegenda();
 }
 
 int Eleicao::getVotosTotais() const {
-    return this->votos->getVotosTotais();
+    return this->votos.getVotosTotais();
 }
 
 int Eleicao::getVagas() const {
@@ -69,8 +69,8 @@ void Eleicao::setVotosTotais(){
         legenda += aux->getVotosLegenda();
     }
 
-    votos->setVotosLegenda(legenda);
-    votos->setVotosNominais(nominais);
+    votos.setVotosLegenda(legenda);
+    votos.setVotosNominais(nominais);
 }
 
 

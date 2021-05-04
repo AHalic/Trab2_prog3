@@ -16,7 +16,7 @@ class Partido {
         string nome;
         string sigla;
         int numero;
-        Votos* votos;
+        Votos votos;
         vector<Candidato*> candidatos;
         int vagas;
         // static bool comparaVotos(Candidato* c1, Candidato* c2);

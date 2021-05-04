@@ -12,7 +12,7 @@ using namespace std;
 Partido::Partido(string nome, string sigla, int votosLegenda, int numero) {
     this->nome = nome;
     this->sigla = sigla;
-    this->votos = new Votos(votosLegenda);
+    this->votos = Votos(votosLegenda);
     this->numero = numero;
     this->vagas = 0;
 }
@@ -30,15 +30,15 @@ int Partido::getNumero() const {
 }
 
 int Partido::getVotosNominais() const {
-    return votos->getVotosNominais();
+    return votos.getVotosNominais();
 }
 
 int Partido::getVotosLegenda() const {
-    return votos->getVotosLegenda();
+    return votos.getVotosLegenda();
 }
 
 int Partido::getVotosTotais() const {
-    return votos->getVotosTotais();
+    return votos.getVotosTotais();
 }
 
 int Partido::getQtdVagas() const {
@@ -50,12 +50,12 @@ vector<Candidato*> Partido::getCandidatos() const {
 }
 
 void Partido::setVotosNominais(int votos) {
-    this->votos->setVotosNominais(votos);
+    this->votos.setVotosNominais(votos);
 }
 
 void Partido::insereCandidato(Candidato* c) {
     candidatos.insert(candidatos.begin(), c);
-    int votosNominais = c->getVotosTotal() + votos->getVotosNominais();    
+    int votosNominais = c->getVotosTotal() + votos.getVotosNominais();
     this->setVotosNominais(votosNominais);
 
     if(c->ehEleito()) 
@@ -71,15 +71,15 @@ string Partido::toString() const{
     if (this->getQtdVagas() > 1) 
         fraseCandidatoEleito = " candidatos eleitos";
 
-    if (this->votos->getVotosTotais() > 1)
+    if (this->votos.getVotosTotais() > 1)
         fraseVoto = " votos";
 
-    if (this->votos->getVotosNominais() > 1)
+    if (this->votos.getVotosNominais() > 1)
         fraseNominal = " nominais";
 
-	string out = this->sigla + " - " + to_string(this->numero) + ", " + to_string(this->votos->getVotosTotais()) + 
-                 fraseVoto + " (" + to_string(this->votos->getVotosNominais()) + fraseNominal + " e " + 
-                 to_string(this->votos->getVotosLegenda()) + " de legenda), " + to_string(this->vagas) + fraseCandidatoEleito;
+	string out = this->sigla + " - " + to_string(this->numero) + ", " + to_string(this->votos.  getVotosTotais()) +
+                 fraseVoto + " (" + to_string(this->votos.getVotosNominais()) + fraseNominal + " e " +
+                 to_string(this->votos.getVotosLegenda()) + " de legenda), " + to_string(this->vagas) + fraseCandidatoEleito;
 
     return out;
 }
