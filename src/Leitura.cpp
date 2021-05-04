@@ -15,6 +15,13 @@
 using namespace std;
 using namespace cpp_util;
 
+/**
+ * Faz leitura e parsing da linha com informacoes do partido. Se alguma informação lida não eh 
+ * valida o partido nao eh criado e a funcao retorna null.
+ * @param linha string de linha de partido.csv com informacao de partido
+ * @param contador numero da linha lida do csv
+ * @return Partido construido ou null.
+ */
 static Partido* criaPartido(string linha, int contador) {
     stringstream s(linha);
     Partido* partidoAux = NULL;
@@ -41,6 +48,15 @@ static Partido* criaPartido(string linha, int contador) {
         votosLegenda = stoi(&votosLegendaStr[0]);
     } catch (exception &e){
         cerr << "Erro de parsing de string para int" << endl;
+        cerr << "Problema encontrado na linha: " << contador << endl;
+        return NULL;
+    }
+    
+    try {
+        if (!ehPositivo(numeroPartido) || !ehPositivo(votosLegenda))
+            throw runtime_error("Valores negativos!");
+    } catch (exception &e) {
+        cerr << e.what() << endl;
         cerr << "Problema encontrado na linha: " << contador << endl;
         return NULL;
     }
@@ -93,6 +109,14 @@ vector<Partido*> lePartidos(string caminho) {
     return partidos;
 }
 
+/**
+ * Faz leitura e parsing da linha com informacoes do candidato. Se alguma informação lida não eh 
+ * valida o candidato nao eh criado e a funcao retorna null. 
+ * @param linha string de linha de candidato.csv com informacao de candidato
+ * @param contador numero da linha lida no csv
+ * @param partidos vetor de partidos existentes
+ * @return Candidato com as informações preenchida ou null.
+ */
 static Candidato* criaCandidato(string linha, int contador, vector<Partido*> partidos) {
     stringstream s(linha);
 
@@ -139,10 +163,19 @@ static Candidato* criaCandidato(string linha, int contador, vector<Partido*> par
 
     try {
         if (!validDate(dataNascStr)) {
-            throw runtime_error("Data de nascimendo inválida.");
+            throw logic_error("Data de nascimendo inválida.");
         }
 
         dataNasc = parseDate(dataNascStr);
+    } catch (exception &e) {
+        cerr << e.what() << endl;
+        cerr << "Problema encontrado na linha: " << contador << endl;
+        return NULL;
+    }
+
+    try {
+        if (!ehPositivo(numeroId) || !ehPositivo(numeroPartido) || !ehPositivo(votosNominais))
+            throw logic_error("Valores negativos!");
     } catch (exception &e) {
         cerr << e.what() << endl;
         cerr << "Problema encontrado na linha: " << contador << endl;
