@@ -16,8 +16,8 @@ INCLUDEDIRS	:= $(shell find $(INCLUDE) -type d)
 # Argumentos utilizados para testar codigo
 
 # Caso teste do pdf
-ARG1 := entradas/iuna-candidatos.csv
-ARG2 := entradas/iuna-partidos.csv
+ARG1 := entradas/vitoria-candidatos.csv
+ARG2 := entradas/vitoria-partidos.csv
 DATE := 15/11/2020
 
  
@@ -31,6 +31,7 @@ all: clean $(EXECUTABLE)
 # Remove apenas os objetos
 cleanObjects:
 	-$(RM) $(OBJECTS)
+	
 # Remove os objetos, o executável e arquivos csv e txt
 clean: 
 	-$(RM) $(OBJECTS) vereadores *.csv *.txt
@@ -43,3 +44,6 @@ run:
 	
 $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(CFLAGS) $(CINCLUDES) $^ -o $@ $(LIBRARIES)
+
+val:
+	valgrind ./$(EXECUTABLE) $(ARG1) $(ARG2) $(DATE)
