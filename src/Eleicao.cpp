@@ -4,6 +4,7 @@
 #include <iostream>
 #include <ctime>
 #include <vector>
+#include <algorithm>
 
 #include "../include/Partido.h"
 #include "../include/Candidato.h"
