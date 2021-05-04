@@ -61,7 +61,7 @@ void Eleicao::setVotosTotais(){
     int nominais = 0;
     int legenda = 0;
 
-    for (Partido* aux: partidos) {
+    for (Partido* aux: this->partidos) {
         nominais += aux->getVotosNominais();
         legenda += aux->getVotosLegenda();
     }
@@ -73,7 +73,7 @@ void Eleicao::setVotosTotais(){
 
 int Eleicao::getFEleitas() const {
     int qtdF = 0;
-    for (Candidato* aux: candidatos) {
+    for (Candidato* aux : candidatos) {
         if(aux->ehGeneroF() && aux->ehEleito()) 
             qtdF++;
     }
@@ -81,8 +81,13 @@ int Eleicao::getFEleitas() const {
     return qtdF;
 }
 
-void Eleicao::ordenaCandidatosPorVoto() {
-    for (Partido* aux: partidos) {
-        aux->ordenaCandidatos();
+void Eleicao::ordenaPartidoCandidatos() {
+    for (Partido* aux: this->partidos) {
+        // aux->ordenaCandidatos();
     }
+}
+
+void Eleicao::ordenaCandidatos() {
+    if(!this->candidatos.empty())
+        sort(this->candidatos.begin(), this->candidatos.end(), comparaVotos);
 }

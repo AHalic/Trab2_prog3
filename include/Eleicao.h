@@ -33,6 +33,8 @@ class Eleicao {
         int getVagas() const;
         vector<Candidato*> getCandidatos() const;
         vector<Partido*> getPartidos() const;
+        void ordenaPartidoCandidatos();
+        void ordenaCandidatos();
 
         void setQtdVagas();
 

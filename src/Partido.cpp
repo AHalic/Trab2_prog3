@@ -98,7 +98,7 @@ bool Partido::comparaVotos(Candidato* c1, Candidato* c2) {
 }
 
 void Partido::ordenaCandidatos() {
-    sort(candidatos.begin(), candidatos.end(), comparaVotos);
+    sort(this->candidatos.begin(), this->candidatos.end(), comparaVotos);
 }
 
 ostream& operator << (ostream &os, const Partido* p) {

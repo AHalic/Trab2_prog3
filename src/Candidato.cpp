@@ -58,3 +58,18 @@ Partido* Candidato::getPartido() const{
 ostream& operator << (ostream &os, const Candidato *c) {
     return (os << c->getNome() + " / " + c->getNomeUrna() + " (" + c->getPartido()->getSigla() + ", " + to_string(c->getVotosTotal()) + "votos)");
 }
+
+bool comparaVotos(Candidato* c1, Candidato* c2) {
+    int votos1 = c1->getVotosTotal();
+    int votos2 = c2->getVotosTotal();
+
+    // cout << "comparando: " << c1->getNome() << " votos " << to_string(votos1) << " com " << c2->getNome() <<  " votos " << to_string(votos2) << endl;
+    if (votos1 > votos2) 
+        return 1;
+    else if (votos1 == votos2) {
+        if (c1->getNascimento() < c2->getNascimento())
+            return 1;
+    }
+    // cout << " deu um" << endl;
+    return 0;
+}
