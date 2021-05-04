@@ -5,7 +5,7 @@
 #include <string>
 
 #include "../include/Pessoa.h"
-// #include "../include/Partido.h"
+#include "../include/Partido.h"
 
 #include <string>
 
@@ -14,7 +14,7 @@ using namespace std;
 
 class Candidato: public Pessoa {
     private:
-        Partido* partido; // TODO: ver se eh so int 
+        Partido *partido; // TODO: ver se eh so int
         int numero;
         int votosTotal;
         string situacao;
@@ -22,20 +22,20 @@ class Candidato: public Pessoa {
         string destinoVoto;
     public:
         Candidato(string nome, char genero, time_t nascimento, string situacao, 
-            string nomeUrna, int vT, int numero, string destVoto, Partido* partido);
+            string nomeUrna, int vT, int numero, string destVoto, Partido *partido);
 		
         string getSituacao() const;
         string getNomeUrna() const;
         int getVotosTotal() const;
         int getNumero() const;
         string getDestVoto() const;
-        bool comparaNome(Candidato* c2) const;
+        bool comparaNome(const Candidato& c2) const;
         bool ehEleito() const;
         bool ehValido() const;
-        Partido* getPartido() const;
+        Partido getPartido() const;
 };
 
-ostream& operator << (ostream &os, const Candidato *c);
-bool comparaVotos(Candidato* c1, Candidato* c2);
+ostream& operator << (ostream &os, const Candidato& c);
+bool comparaVotos(const Candidato *c1, const Candidato *c2);
 
 #endif
