@@ -133,8 +133,8 @@ void mostraPrimeiroUltimoPartido(Eleicao &eleicao) {
                 Candidato* prim = p->getCandidatos().front();
                 Candidato* ult = p->getCandidatos().back();         
 
-                // cout << prim->shortToString() + " / ";
-                // cout << ult->shortToString() << endl;
+                cout << prim->toString() + " / ";
+                cout << ult->toString() << endl;
             }
 
             cont++;

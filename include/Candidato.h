@@ -33,9 +33,12 @@ class Candidato: public Pessoa {
         bool ehEleito() const;
         bool ehValido() const;
         Partido getPartido() const;
+
+        string toString() const;
+
 };
 
-ostream& operator << (ostream &os, const Candidato& c);
+ostream& operator << (ostream &os, const Candidato *c);
 bool comparaVotos(const Candidato *c1, const Candidato *c2);
 
 #endif
