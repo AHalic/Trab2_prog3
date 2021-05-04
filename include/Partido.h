@@ -36,7 +36,8 @@ class Partido {
         void setVotosNominais(int votos);
 
         string toString() const;
-
+        
+        void liberaCandidatos();
         void insereCandidato(Candidato* c);
         void ordenaCandidatos();  
 };

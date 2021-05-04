@@ -96,3 +96,12 @@ void Eleicao::ordenaCandidatos() {
     if(!this->candidatos.empty())
         sort(this->candidatos.begin(), this->candidatos.end(), comparaVotos);
 }
+
+void Eleicao::liberaPartidos() {
+    for (Partido *p : partidos) {
+        if (p != NULL) {
+            p->liberaCandidatos();
+            delete p;
+        }
+    }
+}

@@ -102,6 +102,13 @@ void Partido::ordenaCandidatos() {
         sort(this->candidatos.begin(), this->candidatos.end(), comparaVotos);
 }
 
+void Partido::liberaCandidatos() {
+    for (Candidato *c : this->candidatos) {
+        if (c != NULL)
+            delete c;
+    }
+}
+
 ostream& operator << (ostream &os, const Partido* p) {
     string fraseCandidatoEleito = " candidato eleito";
     string fraseVoto = " voto";
