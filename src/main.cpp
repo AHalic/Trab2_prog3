@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <locale>
 
 #include "../include/Votos.h"
 #include "../include/Pessoa.h"
@@ -14,12 +15,19 @@ using namespace std;
 using namespace cpp_util;
 
 int main (int argc, char *argv[]) {
-    setlocale(LC_ALL, "pt_BR.utf8");
+    setlocale(LC_ALL, "pt_BR.utf8");     // acho q eh inutil
+    setlocale(LC_NUMERIC, "pt_BR.utf8"); // inutil
+    setlocale(LC_TIME, "pt_BR.utf8");    // inutil 
+    float x = 3.4546;
+    cout << "antes " << x << endl;
+
+    cout.imbue(locale("pt_BR.utf8"));    // oq realmente funciona
 
     if(argc != 4) {
         cerr << "Quantidade de argumentos inválida!" << endl;
         exit(1);
     }
+    cout << "depois " << x << endl;
     
     string caminhoCandidato = argv[1];
     string caminhoPartido = argv[2];
@@ -68,24 +76,6 @@ int main (int argc, char *argv[]) {
         cout << c << endl;
     }
     cout << "------fim--------" << endl;
-
-    
-    
-
-    // cout << "oi" << endl;
-    // for(Partido* aux: partidos) {
-    //     cout << "oi" << endl;
-    //     aux->ordenaCandidatos();
-    // }
-    // Teste de Pessoa
-    // time_t niver = parseDate("22/07/1998");
-    // time_t hoje = parseDate("03/05/2021");
-    // Partido* p = new Partido("Partido da Sophie", "SP", 3, 1);
-    // Candidato* c = new Candidato("Sophie", 'F', niver, "Eleito", "Halic", 35, 11111, "Eleito", p);
-    // Pessoa* p = new Pessoa("bea maia", 'F', niver);
-    // cout << "pessoa: "<< p << endl;
-    // cout << p->calculaIdade(hoje) << endl;
-    // cout << c << endl;
 
     return 0;
 }
