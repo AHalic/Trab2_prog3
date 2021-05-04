@@ -14,6 +14,13 @@ using namespace std;
 using namespace cpp_util;
 
 int main (int argc, char *argv[]) {
+    setlocale(LC_ALL, "pt_BR.utf8");
+
+    if(argc != 4) {
+        cerr << "Quantidade de argumentos inválida!" << endl;
+        exit(1);
+    }
+    
     string caminhoCandidato = argv[1];
     string caminhoPartido = argv[2];
     string dataEleicaoStr = argv[3];
@@ -55,6 +62,11 @@ int main (int argc, char *argv[]) {
     cout << "F: " << eleicao->getFEleitas() << endl;
     cout << "Votos: " << eleicao->getVotosTotais() << endl;
 
+    // cout << "oi" << endl;
+    // for(Partido* aux: partidos) {
+    //     cout << "oi" << endl;
+    //     aux->ordenaCandidatos();
+    // }
     // Teste de Pessoa
     // time_t niver = parseDate("22/07/1998");
     // time_t hoje = parseDate("03/05/2021");
