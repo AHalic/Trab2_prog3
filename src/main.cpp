@@ -17,7 +17,7 @@ using namespace cpp_util;
 int main (int argc, char *argv[]) {
     // configura local, uso de virgula e quantidade de casas decimais
     setlocale(LC_ALL, "pt_BR.utf8");     
-    cout.imbue(locale("pt_BR.utf8"));   
+    // cout.imbue(locale("pt_BR.utf8"));    // causa allocs 
     cout.precision(2);
 
     if(argc != 4) {
@@ -73,5 +73,7 @@ int main (int argc, char *argv[]) {
     mostraeleitosPorGenero(eleicao);
     mostraVotosEleicao(eleicao);
     
+    eleicao.liberaPartidos();
+
     return 0;
 }
