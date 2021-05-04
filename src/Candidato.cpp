@@ -55,15 +55,6 @@ Partido Candidato::getPartido() const{
     return *this->partido;
 }
 
-ostream& operator << (ostream &os, const Candidato& c) {
-    string votos = " votos";
-    if (c.getVotosTotal() <= 1) {
-        votos = " voto";
-    }
-
-    return (os << c.getNome() << " / " << c.getNomeUrna() << " (" << c.getPartido().getSigla() << ", " << to_string(c.getVotosTotal()) << votos << ")");
-}
-
 bool comparaVotos(const Candidato *c1, const Candidato *c2) {
     int votos1 = c1->getVotosTotal();
     int votos2 = c2->getVotosTotal();
@@ -76,4 +67,13 @@ bool comparaVotos(const Candidato *c1, const Candidato *c2) {
     }
 
     return false;
+}
+
+ostream& operator << (ostream &os, const Candidato  *c) {
+    string votos = " votos";
+    if (c->getVotosTotal() <= 1) {
+        votos = " voto";
+    }
+
+    return (os << c->getNome() << " / " << c->getNomeUrna() << " (" << c->getPartido().getSigla() << ", " << to_string(c->getVotosTotal()) << votos << ")");
 }

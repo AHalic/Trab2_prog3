@@ -35,7 +35,7 @@ class Candidato: public Pessoa {
         Partido getPartido() const;
 };
 
-ostream& operator << (ostream &os, const Candidato& c);
+ostream& operator << (ostream &os, const Candidato *c);
 bool comparaVotos(const Candidato *c1, const Candidato *c2);
 
 #endif
