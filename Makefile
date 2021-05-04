@@ -30,7 +30,7 @@ all: clean $(EXECUTABLE)
 .PHONY: clean
 # Remove apenas os objetos
 cleanObjects:
-	-$(RM) $(OBJECTS)
+	-rm  */*.o
 	
 # Remove os objetos, o executável e arquivos csv e txt
 clean: 
