@@ -56,5 +56,10 @@ Partido* Candidato::getPartido() const{
 }
 
 ostream& operator << (ostream &os, const Candidato *c) {
-    return (os << c->getNome() + " / " + c->getNomeUrna() + " (" + c->getPartido()->getSigla() + ", " + to_string(c->getVotosTotal()) + "votos)");
+    string votos = " votos";
+    if (c->getVotosTotal() <= 1) {
+        votos = " voto";
+    }
+
+    return (os << c->getNome() << " / " << c->getNomeUrna() << " (" << c->getPartido()->getSigla() << ", " << to_string(c->getVotosTotal()) << votos << ")");
 }
