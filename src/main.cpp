@@ -8,9 +8,8 @@
 #include "../include/Partido.h"
 #include "../include/Eleicao.h"
 #include "../include/Leitura.h"
-#include "../include/DateUtils.h"
-#include "../include/Erros.h"
 #include "../include/Relatorio.h"
+#include "../include/DateUtils.h"
 
 using namespace std;
 using namespace cpp_util;
