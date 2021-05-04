@@ -82,8 +82,10 @@ int Eleicao::getFEleitas() const {
 }
 
 void Eleicao::ordenaPartidoCandidatos() {
-    for (Partido* aux: this->partidos) {
-        // aux->ordenaCandidatos();
+    if (!this->partidos.empty()) {
+        for (Partido* aux: this->partidos) {
+            aux->ordenaCandidatos();
+        }
     }
 }
 
