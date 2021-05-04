@@ -20,7 +20,9 @@ Eleicao::Eleicao(time_t dataEleicao, vector<Partido*> partidos, vector<Candidato
 
     this->setQtdVagas();
     this->setVotosTotais();
-    // this->ordenaCandidatosPorVoto();
+    this->ordenaCandidatos();
+    this->ordenaPartidoCandidatos();
+    // falta ordenar o vetor de partidos
 }
 
         

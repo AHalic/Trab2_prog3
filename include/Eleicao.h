@@ -21,7 +21,6 @@ class Eleicao {
         vector<Partido*> partidos;
         vector<Candidato*> candidatos;
         void setVotosTotais();
-        void ordenaCandidatosPorVoto();
 
     public:
         Eleicao(time_t dataEleicao, vector<Partido*> partidos, vector<Candidato*> candidatos);
