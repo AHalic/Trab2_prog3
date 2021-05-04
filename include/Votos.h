@@ -1,6 +1,14 @@
 #ifndef VOTOS_H
 #define VOTOS_H
 
+/**
+ * Esta classe representa os tipos de votos numa eleicao. Englobando 
+ * votos nominais, votos de legenda e a soma dos dois.
+ * 
+ * @author Beatriz Maia & Sophie Dilhon
+ * @version 1.0
+ * @since 04/05/2021
+ */
 class Votos {
     private:
         int votosNominais;
