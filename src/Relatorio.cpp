@@ -39,11 +39,11 @@ void mostraCandidatosMaisVotados(Eleicao eleicao) {
     cout << "Candidatos mais votados (em ordem decrescente de votação e respeitando número de vagas):" << endl;
 
     for(Candidato* c: eleicao.getCandidatos()) {
-        cout << contador << " - " << c;
+        cout << contador << " - " << c << endl;
         contador++;
 
-        // if(contador == (eleicao.getVagas() + 1))
-        //     break;
+        if(contador == (eleicao.getVagas() + 1))
+            break;
     }
 
     cout << endl;
