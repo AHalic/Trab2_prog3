@@ -61,6 +61,16 @@ int main (int argc, char *argv[]) {
     cout << "Vagas: " << eleicao->getVagas() << endl;
     cout << "F: " << eleicao->getFEleitas() << endl;
     cout << "Votos: " << eleicao->getVotosTotais() << endl;
+    eleicao->ordenaCandidatos();
+    
+    cout << "------ordenado--------" << endl;
+    for(Candidato* c : eleicao->getCandidatos()) {
+        cout << c << endl;
+    }
+    cout << "------fim--------" << endl;
+
+    
+    
 
     // cout << "oi" << endl;
     // for(Partido* aux: partidos) {
