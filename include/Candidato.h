@@ -22,6 +22,9 @@
 class Partido;
 using namespace std;
 
+/**
+ * Esta classe representa o Candidato, que herda os atributos de Pessoa
+**/
 class Candidato: public Pessoa {
     private:
         Partido *partido; 

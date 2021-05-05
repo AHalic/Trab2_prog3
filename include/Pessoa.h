@@ -18,11 +18,7 @@ using namespace std;
 
 /**
  * Esta classe representa uma Pessoa
- * 
- * @author Beatriz Maia & Sophie Dilhon
- * @version 1.0
- * @since 20/03/2021
- */
+**/
 class Pessoa {
     private: 
         string nome;
