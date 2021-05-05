@@ -1,6 +1,6 @@
 /**
  * Pessoa.cpp
- * Definição de funções da classe Pessoa
+ * Definição de metodos da classe Pessoa
  * 
  * @author Beatriz Maia & Sophie Dilhon
  * @version 1.0
@@ -9,7 +9,6 @@
 
 #include "../include/Pessoa.h"
 #include <string>
-
 
 Pessoa::Pessoa(string nome, char genero, time_t nascimento) {
     this->genero = genero;

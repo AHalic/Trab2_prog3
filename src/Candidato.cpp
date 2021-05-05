@@ -1,3 +1,12 @@
+/**
+ * Candidato.cpp
+ * Definição de metodos da classe Candidato
+ * 
+ * @author Beatriz Maia & Sophie Dilhon
+ * @version 1.0
+ * @since 03/05/2021
+**/
+
 #include "../include/Candidato.h"
 
 #include <string>

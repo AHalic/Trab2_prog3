@@ -1,3 +1,13 @@
+/**
+ * Votos.cpp
+ * Declaracao de funcoes utilizada para verificacao e validacao 
+ * das informacoes.
+ * 
+ * @author Beatriz Maia & Sophie Dilhon
+ * @version 1.0
+ * @since 04/05/2021
+**/
+
 #include "../include/Verificador.h"
 
 #include <string>

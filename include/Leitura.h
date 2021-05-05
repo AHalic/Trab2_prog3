@@ -1,8 +1,11 @@
 /**
- * @author Beatriz Maia e Sophie Dilhon
+ * Leitura.h
+ * Declaracao de funcoes utilizada para leitura dos arquivos csv. 
+ * 
+ * @author Beatriz Maia & Sophie Dilhon
  * @version 1.0
- * @since 04/05/2021
- */
+ * @since 03/05/2021
+**/
 
 #ifndef LEITURA_H
 #define LEITURA_H

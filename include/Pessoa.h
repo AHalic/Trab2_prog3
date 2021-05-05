@@ -1,14 +1,14 @@
 /**
  * Pessoa.h
- * Declaração de funções e da classe Pessoa
+ * Declaracao de funcoes e da classe Pessoa
  * 
  * @author Beatriz Maia & Sophie Dilhon
  * @version 1.0
  * @since 03/05/2021
 **/
 
-#ifndef PESSOA_HPP
-#define PESSOA_HPP
+#ifndef PESSOA_H
+#define PESSOA_H
 
 #include <iostream>
 #include <string>
@@ -33,9 +33,9 @@ class Pessoa {
     	
         /**
          * Constructor da classe Pessoa
-         * @param nome - nome desta Pessoa
-         * @param genero - pode ser F ou M
-         * @param nascimento - data de nascimento desta Pessoa 
+         * @param nome nome desta Pessoa
+         * @param genero pode ser F ou M
+         * @param nascimento data de nascimento desta Pessoa 
          */
         Pessoa(string nome, char genero, time_t nascimento);  
 
@@ -65,7 +65,7 @@ class Pessoa {
         
         /**
          * Retorna a idade desta Pessoa com base em uma data
-         * @param data - data para cálculo da idade
+         * @param data data para cálculo da idade
          * @return idade 
          */
         int calculaIdade(time_t data);

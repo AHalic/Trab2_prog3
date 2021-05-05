@@ -1,3 +1,12 @@
+/**
+ * Leitura.cpp
+ * Declaracao de funcoes utilizada para leitura dos arquivos csv. 
+ * 
+ * @author Beatriz Maia & Sophie Dilhon
+ * @version 1.0
+ * @since 03/05/2021
+**/
+
 #include "../include/Leitura.h"
 
 #include <iostream>
@@ -12,7 +21,6 @@
 #include "../include/Candidato.h"
 #include "../include/Partido.h"
 
-using namespace std;
 using namespace cpp_util;
 
 /**
@@ -236,7 +244,6 @@ vector<Candidato*> leCandidatos(string caminho, vector<Partido*> partidos) {
         if(!CandidatoHeaderValido(linhaAux)) {
             throw runtime_error("Arquivo csv não possui todas as caracteristicas de candidato.");
         }
-
 
         // ler proximas linhas
         while(getline(fin, linhaAux)) {
