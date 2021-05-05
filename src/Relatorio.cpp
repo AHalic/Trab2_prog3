@@ -205,4 +205,6 @@ void mostraVotosEleicao(Eleicao &eleicao) {
 
     cout << "Total de votos de Legenda: " << to_string(votosLegenda);
     cout << " (" << fixed << porLegenda << "%)" << endl;
+
+    cout << endl;
 }
