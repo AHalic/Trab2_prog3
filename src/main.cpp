@@ -17,9 +17,10 @@ using namespace cpp_util;
 int main (int argc, char *argv[]) {
     // configura local, uso de virgula e quantidade de casas decimais
     setlocale(LC_ALL, "pt_BR.utf8");     
-    cout.imbue(locale("pt_BR.utf8"));    // causa allocs 
+    cout.imbue(locale("pt_BR.utf8"));    
     cout.precision(2);
 
+    // verifica se recebeu a quantidade correta de argumentos
     if(argc != 4) {
         cerr << "Quantidade de argumentos inválida!" << endl;
         exit(1);
@@ -62,6 +63,7 @@ int main (int argc, char *argv[]) {
 
     Eleicao eleicao = Eleicao(dataEleicao, partidos, candidatos);
 
+    // mostra relatorios
     mostraNumeroVagas(eleicao);
     mostraVereadoresEleitos(eleicao);
     mostraCandidatosMaisVotados(eleicao);
@@ -73,7 +75,11 @@ int main (int argc, char *argv[]) {
     mostraeleitosPorGenero(eleicao);
     mostraVotosEleicao(eleicao);
     
+    // libera memoria alocada por partido e candidato
     eleicao.liberaPartidos();
+
+    // libera os allocs causado pelo locale("pt_BR.utf8")
+    cout.imbue(locale());    
 
     return 0;
 }
