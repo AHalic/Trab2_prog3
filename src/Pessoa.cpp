@@ -45,5 +45,6 @@ ostream& operator << (ostream &os, const Pessoa *p) {
 }
 
 int Pessoa::calculaIdade(time_t data){
-    return (((difftime(data, this->nascimento) + 86400L/2) / 86400L) / 365);
+    int anoGregoriaAnoS = 31556952;
+    return (((difftime(data, this->nascimento) / anoGregoriaAnoS)));
 }
