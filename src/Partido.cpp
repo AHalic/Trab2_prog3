@@ -1,3 +1,12 @@
+/**
+ * Partido.cpp
+ * Definição de metodos da classe Partido
+ * 
+ * @author Beatriz Maia & Sophie Dilhon
+ * @version 1.0
+ * @since 04/05/2021
+**/
+
 #include "../include/Partido.h"
 
 #include <iostream>
@@ -62,40 +71,40 @@ void Partido::insereCandidato(Candidato* c) {
         vagas++;
 }
 
+bool comparaVotosPartidos(const Partido* p1, const Partido* p2) {
+    if(!p1->getCandidatos().empty() && !p2->getCandidatos().empty()) {
+        int votos1 = p1->getCandidatos().front()->getVotosTotal();
+        int votos2 = p2->getCandidatos().front()->getVotosTotal();
 
-string Partido::toString() const{
-    string fraseCandidatoEleito = " candidato eleito";
-    string fraseVoto = " voto";
-    string fraseNominal = " nominal";
-
-    if (this->getQtdVagas() > 1) 
-        fraseCandidatoEleito = " candidatos eleitos";
-
-    if (this->votos.getVotosTotais() > 1)
-        fraseVoto = " votos";
-
-    if (this->votos.getVotosNominais() > 1)
-        fraseNominal = " nominais";
-
-	string out = this->sigla + " - " + to_string(this->numero) + ", " + to_string(this->votos.  getVotosTotais()) +
-                 fraseVoto + " (" + to_string(this->votos.getVotosNominais()) + fraseNominal + " e " +
-                 to_string(this->votos.getVotosLegenda()) + " de legenda), " + to_string(this->vagas) + fraseCandidatoEleito;
-
-    return out;
+        if (votos1 > votos2) {
+            return true;
+        }
+        else if (votos1 == votos2) {
+            if (p1->getCandidatos().front()->getNumero() < p2->getCandidatos().front()->getNumero()) {
+                return true;   
+            }
+        }
+        return false;
+    }
+    else {
+        if (!p1->getCandidatos().empty() && p2->getCandidatos().empty()) {
+            return true;
+        }
+        return false;
+    }
 }
 
-// bool Partido::comparaVotos(Candidato* c1, Candidato* c2) {
-//     int votos1 = c1->getVotosTotal();
-//     int votos2 = c2->getVotosTotal();
+bool comparaVotosTotais(const Partido* p1, const Partido* p2) {
+    int votos1 = p1->getVotosTotais();
+    int votos2 = p2->getVotosTotais();
 
-//     if (votos1 > votos2) 
-//         return -1;
-//     else if (votos1 == votos2) {
-//         if (c1->getNascimento() < c2->getNascimento())
-//             return -1;
-//     }
-//     return 1;
-// }
+    if(votos1 > votos2)
+        return true;
+    else if(votos1 == votos2)
+        if(p1->getNumero() < p2->getNumero())
+            return true;
+    return false;
+}
 
 void Partido::ordenaCandidatos() {
     if(!this->candidatos.empty())

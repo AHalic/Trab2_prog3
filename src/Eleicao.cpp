@@ -9,7 +9,6 @@
 #include "../include/Partido.h"
 #include "../include/Candidato.h"
 
-using namespace std;
 
 Eleicao::Eleicao(time_t dataEleicao, vector<Partido*> partidos, vector<Candidato*> candidatos) {
     this->dataEleicao = dataEleicao;
@@ -21,8 +20,8 @@ Eleicao::Eleicao(time_t dataEleicao, vector<Partido*> partidos, vector<Candidato
     this->setQtdVagas();
     this->setVotosTotais();
     this->ordenaCandidatos();
-    this->ordenaPartidoCandidatos();
-    // falta ordenar o vetor de partidos
+    this->ordenaCandidatosPartidos();
+    this->ordenaPartidos();
 }
 
         
@@ -73,7 +72,6 @@ void Eleicao::setVotosTotais(){
     votos.setVotosNominais(nominais);
 }
 
-
 int Eleicao::getFEleitas() const {
     int qtdF = 0;
     for (Candidato* aux : candidatos) {
@@ -84,7 +82,7 @@ int Eleicao::getFEleitas() const {
     return qtdF;
 }
 
-void Eleicao::ordenaPartidoCandidatos() {
+void Eleicao::ordenaCandidatosPartidos() {
     if (!this->partidos.empty()) {
         for (Partido* aux: this->partidos) {
             aux->ordenaCandidatos();
@@ -92,9 +90,33 @@ void Eleicao::ordenaPartidoCandidatos() {
     }
 }
 
+void Eleicao::ordenaPartidos() {
+    if (!this->partidos.empty()) {
+        sort(this->partidos.begin(), this->partidos.end(), comparaVotosTotais);
+    }
+}
+
 void Eleicao::ordenaCandidatos() {
     if(!this->candidatos.empty())
         sort(this->candidatos.begin(), this->candidatos.end(), comparaVotos);
+}
+
+void Eleicao::ordenaPartidosVotosPrimeiroCandidato() {
+    if(!this->partidos.empty()){
+        sort(this->partidos.begin(), this->partidos.end(), comparaVotosPartidos);
+    }
+}
+
+int Eleicao::getCandidatosPorIdade(int limMin, int limMax, time_t data) {
+    int idadeCandidatos = 0;
+
+    for(Candidato* c : this->candidatos) {
+        int idade = c->calculaIdade(data);
+        if (limMin <= idade && idade < limMax && c->ehEleito()) {
+            idadeCandidatos++;
+        }
+    }
+    return idadeCandidatos;
 }
 
 void Eleicao::liberaPartidos() {

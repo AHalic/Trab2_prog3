@@ -33,8 +33,11 @@ class Eleicao {
         vector<Partido*> getPartidos() const;
         int getFEleitas() const;
         
-        void ordenaPartidoCandidatos();
+        void ordenaCandidatosPartidos();
+        void ordenaPartidos();
         void ordenaCandidatos();
+        void ordenaPartidosVotosPrimeiroCandidato();
+        int getCandidatosPorIdade(int limMin, int limMax, time_t data);
         void liberaPartidos();
 
         void setQtdVagas();

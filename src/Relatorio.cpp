@@ -1,9 +1,16 @@
+/**
+ * Relatorio.cpp
+ * Declaracao de funcoes utilizada para mostra dos relatorios. 
+ * 
+ * @author Beatriz Maia & Sophie Dilhon
+ * @version 1.0
+ * @since 04/05/2021
+**/
+
 #include "../include/Relatorio.h"
 
 #include <iostream>
 #include <iomanip>
-
-using namespace std;
 
 /**
  * Metodo para calcular a porcentagem e converter para String. Usa "," como separador das 
@@ -103,7 +110,6 @@ void mostraEleitosBeneficiados(Eleicao &eleicao, int nEleitos) {
     }
 }
 
-// precisa ta ordenado
 void mostraInfoPartido(Eleicao &eleicao) {
     int contador = 1;
 
@@ -117,12 +123,10 @@ void mostraInfoPartido(Eleicao &eleicao) {
     cout << endl;
 }
 
-// precisa ordenar
 void mostraPrimeiroUltimoPartido(Eleicao &eleicao) {
     int cont = 1;
 
-    // precisa ordenar
-    
+    eleicao.ordenaPartidosVotosPrimeiroCandidato();
     cout << "Primeiro e último colocados de cada partido:" << endl;
 
     for (Partido* p: eleicao.getPartidos()) {
@@ -146,7 +150,23 @@ void mostraPrimeiroUltimoPartido(Eleicao &eleicao) {
 
 // falta
 void mostraEleitosPorIdade(Eleicao &eleicao) {
+    int qtdMenos30 = eleicao.getCandidatosPorIdade(0, 30, eleicao.getDataEleicao());
+    int qtdMenos40 = eleicao.getCandidatosPorIdade(30, 40, eleicao.getDataEleicao()); 
+    int qtdMenos50 = eleicao.getCandidatosPorIdade(40, 50, eleicao.getDataEleicao());
+    int qtdMenos60 = eleicao.getCandidatosPorIdade(50, 60, eleicao.getDataEleicao());
+    int qtdMaiorIgual60 = eleicao.getCandidatosPorIdade(60, 1000, eleicao.getDataEleicao());
+    int qtdCandidatos = eleicao.getVagas();
 
+    if (qtdCandidatos > 0) {
+        cout << "Eleitos, por faixa etária (na data da eleição):" << endl;
+        cout << "      Idade < 30: " << to_string(qtdMenos30) << " (" << fixed << calculaPorcentagem(qtdMenos30, qtdCandidatos) << "%)" << endl;
+        cout << "30 <= Idade < 40: " << to_string(qtdMenos40) << " (" << fixed << calculaPorcentagem(qtdMenos40, qtdCandidatos) << "%)" << endl;
+        cout << "40 <= Idade < 50: " << to_string(qtdMenos50) << " (" << fixed << calculaPorcentagem(qtdMenos50, qtdCandidatos) << "%)" << endl;
+        cout << "50 <= Idade < 60: " << to_string(qtdMenos60) << " (" << fixed << calculaPorcentagem(qtdMenos60, qtdCandidatos) << "%)" << endl;
+        cout << "60 <= Idade     : " << to_string(qtdMaiorIgual60) << " (" << fixed << calculaPorcentagem(qtdMaiorIgual60, qtdCandidatos) << "%)" << endl;
+
+        cout << endl;
+    }
 }
  
 void mostraeleitosPorGenero(Eleicao &eleicao) {
