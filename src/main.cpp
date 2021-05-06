@@ -18,8 +18,8 @@ using namespace cpp_util;
 
 int main (int argc, char *argv[]) {
     // configura local, uso de virgula e quantidade de casas decimais
-    setlocale(LC_ALL, "pt_BR.utf8");     
-    cout.imbue(locale("pt_BR.utf8"));    
+    setlocale(LC_ALL, "pt_BR.UTF-8");     
+    cout.imbue(locale("pt_BR.UTF-8"));    
     cout.precision(2);
 
     // verifica se recebeu a quantidade correta de argumentos
