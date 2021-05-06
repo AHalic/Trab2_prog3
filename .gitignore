@@ -8,9 +8,14 @@ makefile.dms
 # Arquivos gerados por c++
 vereadores
 */*.o
+*/*/*.o
 *.out
 teste
 
 # Arquivos e pasta do CLion
 cmake-build-debug
 .idea
+
+# Scrip de correção
+prog3-trab2-script
+prog3-trab2-script.zip
