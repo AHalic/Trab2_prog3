@@ -1,3 +1,13 @@
+/**
+ * ExLeituraPartido.cpp
+ * Definição de metodos da classe ExLeituraPartido.
+ * Classe representa uma excecao.
+ * 
+ * @author Beatriz Maia & Sophie Dilhon
+ * @version 1.0
+ * @since 06/05/2021
+**/
+
 #include <iostream>
 #include <string>
 

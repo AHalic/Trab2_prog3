@@ -4,7 +4,7 @@
  * 
  * @author Beatriz Maia & Sophie Dilhon
  * @version 1.0
- * @since 04/05/2021
+ * @since 05/05/2021
 **/
 
 #ifndef PARTIDO_H
@@ -20,6 +20,9 @@
 class Candidato;
 using namespace std;
 
+/**
+ * Esta classe representa o Partido
+**/
 class Partido {
     private: 
         string nome;

@@ -4,7 +4,7 @@
  * 
  * @author Beatriz Maia & Sophie Dilhon
  * @version 1.0
- * @since 04/05/2021
+ * @since 06/05/2021
 **/
 
 #include "../include/Relatorio.h"

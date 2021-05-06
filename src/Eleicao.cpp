@@ -1,3 +1,12 @@
+/**
+ * Relatorio.cpp
+ * Declaracao de funcoes e da classe Eleicao
+ * 
+ * @author Beatriz Maia & Sophie Dilhon
+ * @version 1.0
+ * @since 04/05/2021
+**/
+
 #include "../include/Eleicao.h"
 
 #include <string>

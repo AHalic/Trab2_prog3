@@ -4,7 +4,7 @@
  * 
  * @author Beatriz Maia & Sophie Dilhon
  * @version 1.0
- * @since 03/05/2021
+ * @since 06/05/2021
 **/
 
 #ifndef LEITURA_H
