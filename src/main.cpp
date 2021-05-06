@@ -51,12 +51,12 @@ int main (int argc, char *argv[]) {
         partidos = lePartidos(caminhoPartido);
         
         if (partidos.empty())
-            throw domain_error("Partidos vazios");
+            throw runtime_error("Partidos vazios");
         
         candidatos = leCandidatos(caminhoCandidato, partidos);
 
         if (candidatos.empty()) 
-            throw domain_error("Candidatos vazios");
+            throw runtime_error("Candidatos vazios");
 
     } catch (exception &e) {
         cerr << e.what() << endl;
