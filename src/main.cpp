@@ -12,6 +12,8 @@
 #include "../include/DateUtils.h"
 
 using namespace std;
+using namespace leitura;
+using namespace relatorio;
 using namespace cpp_util;
 
 int main (int argc, char *argv[]) {
