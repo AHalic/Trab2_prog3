@@ -62,19 +62,19 @@ class Partido {
          * Retorna a quantidade de votos nominais possuidos por este Partido
          * @return votos nominais
          */
-        int getVotosNominais() const;
+        virtual int getVotosNominais() const;
 
         /**
          * Retorna a quantidade de votos de legenda a este Partido
          * @return votos de legenda
          */
-        int getVotosLegenda() const;
+        virtual int getVotosLegenda() const;
 
         /**
          * Retorna a quantidade total de votos deste PArtido
          * @return votos de Legenda + votos nominais
          */
-        int getVotosTotais() const;
+        virtual int getVotosTotais() const;
 
         /**
          * Retorna a quantidade de Candidatos 

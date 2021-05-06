@@ -55,21 +55,21 @@ class Eleicao {
          * obtidas nesta eleição
          * @return votos nominais
          */
-        int getVotosNominais() const;
+        virtual int getVotosNominais() const;
 
         /**
          * Retorna a quantidade de votos de legenda
          * obtidos nesta eleição
          * @return votos de legenda
          */        
-        int getVotosLegenda() const;
+        virtual int getVotosLegenda() const;
 
         /**
          * Retorna a quantidade de votos totais
          * obtidas nesta eleição
          * @return votos totais
          */
-        int getVotosTotais() const;
+        virtual int getVotosTotais() const;
 
         /**
          * Retorna a quantidade de candidatos eleitos nesta eleição
