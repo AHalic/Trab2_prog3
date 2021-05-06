@@ -1,11 +1,13 @@
-#include <iostream>
-#include <vector>
+/**
+ * Trabalho 2 de Programacao 3.
+ * 
+ * @author Beatriz Maia & Sophie Dilhon
+ * @version 1.0
+ * @since 06/05/2021
+**/
+
 #include <locale>
 
-#include "../include/Votos.h"
-#include "../include/Pessoa.h"
-#include "../include/Candidato.h"
-#include "../include/Partido.h"
 #include "../include/Eleicao.h"
 #include "../include/Leitura.h"
 #include "../include/Relatorio.h"
