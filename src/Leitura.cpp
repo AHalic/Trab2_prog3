@@ -79,6 +79,8 @@ namespace leitura {
 
     vector<Partido*> lePartidos(string caminho) {
         ifstream fin;
+        fin.exceptions(ifstream::badbit | ifstream::failbit);
+
         string linhaAux;
         Partido* partidoAux;
         vector<Partido*> partidos;
@@ -112,8 +114,13 @@ namespace leitura {
                     partidos.insert(partidos.begin(), partidoAux); // adiciona partido a vetor caso nao for vazio
             }
         }
+        catch (ifstream::failure e) {
+            cerr << "Não foi possível abrir arquivo " << caminho << endl;
+            exit(1);
+        }
         catch (exception &e) {
-            cerr << "Problemas com IO: " << e.what() << endl;
+            cerr << "Exceção encontrada!" << endl;
+            cerr << e.what() << endl;
         }
 
         fin.close();
@@ -224,6 +231,8 @@ namespace leitura {
 
     vector<Candidato*> leCandidatos(string caminho, vector<Partido*> partidos) {
         ifstream fin;
+        fin.exceptions(ifstream::badbit | ifstream::failbit);
+
         string linhaAux;
         Candidato* candidatoAux;
         vector<Candidato*> candidatos;
@@ -232,7 +241,6 @@ namespace leitura {
         try {
             fin.open(caminho, ios::in);     
             if (!fin.is_open()) {
-                cout << "oi" << endl;
                 throw runtime_error("Não foi possível abrir arquivo.");
             }
             
@@ -258,7 +266,13 @@ namespace leitura {
                     candidatos.insert(candidatos.begin(), candidatoAux); // adiciona partido a vetor caso nao for vazio
             }
         }
+        catch (ifstream::failure e) {
+            cerr << "Não foi possível abrir arquivo " << caminho << endl;
+            exit(1);
+        }
         catch (exception &e) {
+            cerr << "Exceção encontrada!" << endl;
+            cerr << e.what() << endl;
         }
 
         fin.close();
