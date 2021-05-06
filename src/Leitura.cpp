@@ -18,6 +18,7 @@
 
 #include "../include/Verificador.h"
 #include "../include/DateUtils.h"
+#include "../include/StringUtils.h"
 #include "../include/Candidato.h"
 #include "../include/Partido.h"
 
@@ -38,9 +39,13 @@ static Partido* criaPartido(string linha, int contador) {
 
     try {
         getline(s, numeroPartidoStr, ',');
+        trim(numeroPartidoStr);
         getline(s, votosLegendaStr, ',');
+        trim(votosLegendaStr);
         getline(s, nome, ',');
+        trim(nome);
         getline(s, sigla, ',');
+        trim(sigla);
 
         if (!linhaPartidoValida(numeroPartidoStr, votosLegendaStr, nome, sigla))
             throw runtime_error("Linha não contém todas informações necessárias de um partido!");
@@ -79,7 +84,7 @@ vector<Partido*> lePartidos(string caminho) {
     string linhaAux;
     Partido* partidoAux;
     vector<Partido*> partidos;
-    int contador = 0;
+    int contador = 1;
 
     try {
         fin.open(caminho, ios::in);     
@@ -140,14 +145,23 @@ static Candidato* criaCandidato(string linha, int contador, vector<Partido*> par
 
     try {
         getline(s, numeroIdStr, ',');
+        trim(numeroIdStr);
         getline(s, votosNominaisStr, ',');
+        trim(votosNominaisStr);
         getline(s, situacao, ',');
+        trim(situacao);
         getline(s, nome, ',');
+        trim(nome);
         getline(s, nomeUrna, ',');
+        trim(nomeUrna);
         getline(s, generoStr, ',');
+        trim(generoStr);
         getline(s, dataNascStr, ',');
+        trim(dataNascStr);
         getline(s, destinoVoto, ',');
+        trim(destinoVoto);
         getline(s, numeroPartidoStr, ',');
+        trim(numeroPartidoStr);
 
         if (!linhaCandidatoValida(numeroIdStr, votosNominaisStr, situacao, nome, nomeUrna, generoStr, dataNascStr, destinoVoto, numeroPartidoStr))
             throw runtime_error("Linha não contém todas informações necessárias de um candidato!");
@@ -223,7 +237,7 @@ vector<Candidato*> leCandidatos(string caminho, vector<Partido*> partidos) {
     string linhaAux;
     Candidato* candidatoAux;
     vector<Candidato*> candidatos;
-    int contador = 0;
+    int contador = 1;
 
     try {
         fin.open(caminho, ios::in);     
