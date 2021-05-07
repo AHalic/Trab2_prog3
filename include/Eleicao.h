@@ -42,7 +42,7 @@ class Eleicao {
          * @param candidatos lista de candidatos participando desta eleição
          * @param partidos lista de partidos presentes nesta eleição
          */
-        Eleicao(time_t dataEleicao, vector<Partido*> partidos, vector<Candidato*> candidatos);
+        Eleicao(time_t& dataEleicao, vector<Partido*> partidos, vector<Candidato*> candidatos);
         
         /**
          * Retorna a data em que a eleição foi realizada
@@ -103,7 +103,7 @@ class Eleicao {
          * @param data data para calculo da idade
          * @return quantidade de candidatos no intervalo
         **/
-        int getCandidatosPorIdade(int limMin, int limMax, time_t data);
+        int getCandidatosPorIdade(int limMin, int limMax, time_t& data);
 
         /**
          * Calcula a quantidade de candidatos eleitos

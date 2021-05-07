@@ -10,7 +10,7 @@
 #include "../include/Pessoa.h"
 #include <string>
 
-Pessoa::Pessoa(string nome, char genero, time_t nascimento) {
+Pessoa::Pessoa(string& nome, char genero, time_t& nascimento) {
     this->genero = genero;
     this->nascimento = nascimento;
     
@@ -44,7 +44,7 @@ ostream& operator << (ostream &os, const Pessoa *p) {
     return (os << p->getNome());
 }
 
-int Pessoa::calculaIdade(time_t data){
+int Pessoa::calculaIdade(time_t& data){
     int anoGregoriaAnoS = 31556952;
     return (((difftime(data, this->nascimento) / anoGregoriaAnoS)));
 }

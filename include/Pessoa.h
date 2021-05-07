@@ -33,7 +33,7 @@ class Pessoa {
          * @param genero pode ser F ou M
          * @param nascimento data de nascimento desta Pessoa 
          */
-        Pessoa(string nome, char genero, time_t nascimento);  
+        Pessoa(string& nome, char genero, time_t& nascimento);  
 
         /**
          * Retorna o nome desta Pessoa
@@ -64,7 +64,7 @@ class Pessoa {
          * @param data data para cálculo da idade
          * @return idade 
          */
-        int calculaIdade(time_t data);
+        int calculaIdade(time_t& data);
 };
 
 /**

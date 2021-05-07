@@ -19,7 +19,7 @@
 #include "../include/Candidato.h"
 
 
-Eleicao::Eleicao(time_t dataEleicao, vector<Partido*> partidos, vector<Candidato*> candidatos) {
+Eleicao::Eleicao(time_t& dataEleicao, vector<Partido*> partidos, vector<Candidato*> candidatos) {
     this->dataEleicao = dataEleicao;
     this->partidos = partidos;
     this->candidatos = candidatos;
@@ -116,7 +116,7 @@ void Eleicao::ordenaPartidosVotosPrimeiroCandidato() {
     }
 }
 
-int Eleicao::getCandidatosPorIdade(int limMin, int limMax, time_t data) {
+int Eleicao::getCandidatosPorIdade(int limMin, int limMax, time_t& data) {
     int idadeCandidatos = 0;
 
     for(Candidato* c : this->candidatos) {

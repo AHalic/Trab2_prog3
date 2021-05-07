@@ -16,8 +16,8 @@
 
 using namespace std;
 
-Candidato::Candidato(string nome, char genero, time_t nascimento, string situacao, 
-                    string nomeUrna, int vT, int numero, string destVoto, Partido *partido)
+Candidato::Candidato(string& nome, char genero, time_t& nascimento, string& situacao, 
+                    string& nomeUrna, int vT, int numero, string& destVoto, Partido *partido)
                     : Pessoa(nome, genero, nascimento) {
     
     this->situacao = situacao;

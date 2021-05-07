@@ -41,7 +41,7 @@ class Partido {
          * @param votosLegenda total de votos de legenda para este Partido
          * @param numero número referente a este Partido
          */
-        Partido(string nome, string sigla, int votosLegenda, int numero);  
+        Partido(string& nome, string& sigla, int votosLegenda, int numero);  
         
         /**
          * Retorna o nome deste Partido

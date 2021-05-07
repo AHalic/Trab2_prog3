@@ -18,7 +18,7 @@
 
 using namespace std;
 
-Partido::Partido(string nome, string sigla, int votosLegenda, int numero) {
+Partido::Partido(string& nome, string& sigla, int votosLegenda, int numero) {
     this->nome = nome;
     this->sigla = sigla;
     this->votos = Votos(votosLegenda);

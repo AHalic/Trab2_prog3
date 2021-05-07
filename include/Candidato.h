@@ -48,8 +48,8 @@ class Candidato: public Pessoa {
          * @param destVoto destino do votos do candidato 
          * @param partido ponteiro ao partido a qual o candidato pertence
          */
-        Candidato(string nome, char genero, time_t nascimento, string situacao, 
-            string nomeUrna, int vT, int numero, string destVoto, Partido *partido);
+        Candidato(string& nome, char genero, time_t& nascimento, string& situacao, 
+            string& nomeUrna, int vT, int numero, string& destVoto, Partido *partido);
 
         /** 
          * Retorna a situacao do candidato.
