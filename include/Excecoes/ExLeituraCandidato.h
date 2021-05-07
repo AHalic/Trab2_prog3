@@ -26,6 +26,7 @@ class ExLeituraCandidato : public exception{
 
     ExLeituraCandidato(const string &msg);
     ExLeituraCandidato(const string &msg, const int &linha);
+    virtual ~ExLeituraCandidato() noexcept;
     
-    virtual const char* what() const throw();
+    virtual const char* what() const noexcept;
 };

@@ -25,7 +25,9 @@ ExLeituraPartido::ExLeituraPartido(const string &msg, const int &linha) : _msg(m
     this->_linha = linha;
 }
 
-const char * ExLeituraPartido::what() const throw () {
+ExLeituraPartido::~ExLeituraPartido() noexcept {}
+
+const char * ExLeituraPartido::what() const noexcept {
     string out = _msg;
     
     if (_linha > -1) {

@@ -26,6 +26,7 @@ class ExLeituraPartido : public exception{
 
     ExLeituraPartido(const string &msg);
     ExLeituraPartido(const string &msg, const int &linha);
+    virtual ~ExLeituraPartido() noexcept;
     
-    virtual const char* what() const throw();
+    virtual const char* what() const noexcept;
 };

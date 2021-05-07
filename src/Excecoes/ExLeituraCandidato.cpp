@@ -25,7 +25,9 @@ ExLeituraCandidato::ExLeituraCandidato(const string &msg, const int &linha) : _m
     this->_linha = linha;
 }
 
-const char * ExLeituraCandidato::what() const throw () {
+ExLeituraCandidato::~ExLeituraCandidato() noexcept{}
+
+const char * ExLeituraCandidato::what() const noexcept {
     string out = _msg;
     
     if (_linha > -1) {
