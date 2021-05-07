@@ -25,11 +25,6 @@ ExLeituraCandidato::ExLeituraCandidato(const string &msg, const int &linha) : _m
     this->_linha = linha;
 }
 
-ExLeituraCandidato::~ExLeituraCandidato() {
-    this->_msg = "Erro encontrado na leitura de candidatos!";
-    this->_linha = -1;
-}
-
 const char * ExLeituraCandidato::what() const throw () {
     string out = _msg;
     
