@@ -79,7 +79,6 @@ namespace leitura {
 
     vector<Partido*> lePartidos(string caminho) {
         ifstream fin;
-        fin.exceptions(ifstream::badbit | ifstream::failbit);
 
         string linhaAux;
         Partido* partidoAux;
@@ -89,7 +88,8 @@ namespace leitura {
         try {
             fin.open(caminho, ios::in);     
             if (!fin.is_open()) {
-                throw runtime_error("Não foi possível abrir arquivo.");
+                string out = "Não foi possível abrir o arquivo " + caminho;
+                throw runtime_error(out);
             }
             
             // ler header
@@ -113,10 +113,6 @@ namespace leitura {
                 if (partidoAux)
                     partidos.insert(partidos.begin(), partidoAux); // adiciona partido a vetor caso nao for vazio
             }
-        }
-        catch (ifstream::failure e) {
-            cerr << "Não foi possível abrir arquivo " << caminho << endl;
-            exit(1);
         }
         catch (exception &e) {
             cerr << "Exceção encontrada!" << endl;
@@ -231,7 +227,6 @@ namespace leitura {
 
     vector<Candidato*> leCandidatos(string caminho, vector<Partido*> partidos) {
         ifstream fin;
-        fin.exceptions(ifstream::badbit | ifstream::failbit);
 
         string linhaAux;
         Candidato* candidatoAux;
@@ -241,8 +236,8 @@ namespace leitura {
         try {
             fin.open(caminho, ios::in);     
             if (!fin.is_open()) {
-                throw runtime_error("Não foi possível abrir arquivo.");
-            }
+                string out = "Não foi possível abrir o arquivo " + caminho;
+                throw runtime_error(out);            }
             
             // ler header
             getline (fin, linhaAux); // TODO: verificar se linhaAux tem informacoes certas
@@ -265,10 +260,6 @@ namespace leitura {
                 if (candidatoAux)
                     candidatos.insert(candidatos.begin(), candidatoAux); // adiciona partido a vetor caso nao for vazio
             }
-        }
-        catch (ifstream::failure e) {
-            cerr << "Não foi possível abrir arquivo " << caminho << endl;
-            exit(1);
         }
         catch (exception &e) {
             cerr << "Exceção encontrada!" << endl;
