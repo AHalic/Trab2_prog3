@@ -103,7 +103,7 @@ class Eleicao {
          * @param data data para calculo da idade
          * @return quantidade de candidatos no intervalo
         **/
-        int getCandidatosPorIdade(int limMin, int limMax, time_t& data);
+        int getCandidatosPorIdade(int limMin, int limMax, time_t data);
 
         /**
          * Calcula a quantidade de candidatos eleitos

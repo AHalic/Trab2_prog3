@@ -116,7 +116,7 @@ void Eleicao::ordenaPartidosVotosPrimeiroCandidato() {
     }
 }
 
-int Eleicao::getCandidatosPorIdade(int limMin, int limMax, time_t& data) {
+int Eleicao::getCandidatosPorIdade(int limMin, int limMax, time_t data) {
     int idadeCandidatos = 0;
 
     for(Candidato* c : this->candidatos) {
