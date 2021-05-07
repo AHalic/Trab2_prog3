@@ -26,7 +26,7 @@ class ExLeituraCandidato : public exception{
 
     ExLeituraCandidato(const string &msg);
     ExLeituraCandidato(const string &msg, const int &linha);
-    ExLeituraCandidato();
+    ~ExLeituraCandidato();
     
     virtual const char* what() const throw();
 };

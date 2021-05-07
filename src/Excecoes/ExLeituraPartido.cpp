@@ -25,7 +25,7 @@ ExLeituraPartido::ExLeituraPartido(const string &msg, const int &linha) : _msg(m
     this->_linha = linha;
 }
 
-ExLeituraPartido::ExLeituraPartido() {
+ExLeituraPartido::~ExLeituraPartido() {
     this->_msg = "Erro encontrado na leitura de partidos!";
     this->_linha = -1;
 }
