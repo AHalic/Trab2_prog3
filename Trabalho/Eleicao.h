@@ -43,7 +43,13 @@ class Eleicao {
          * @param partidos lista de partidos presentes nesta eleição
          */
         Eleicao(time_t& dataEleicao, vector<Partido*> partidos, vector<Candidato*> candidatos);
-        
+        void liberaInformacoes();
+
+        /**
+         * Destrutor de Eleicao
+        **/
+        // virtual ~Eleicao();
+
         /**
          * Retorna a data em que a eleição foi realizada
          * @return data da eleição
@@ -135,13 +141,6 @@ class Eleicao {
          * com base no numero do candidato
          */
         void ordenaPartidosVotosPrimeiroCandidato();
-
-        /**
-         * Libera memoria de um partido 
-        **/
-        // void liberaPartidos();
-        virtual ~Eleicao();
-
 };
 
 #endif

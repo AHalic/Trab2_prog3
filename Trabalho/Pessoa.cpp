@@ -9,16 +9,16 @@
 
 #include "Pessoa.h"
 #include <string>
+#include <algorithm>
 
 Pessoa::Pessoa(string& nome, char genero, time_t& nascimento) {
+    transform(nome.begin(), nome.end(), nome.begin(), ::toupper);
     this->genero = genero;
     this->nascimento = nascimento;
-    
-    for (int i = 0; i < nome.length(); i++) {
-        nome[i] = toupper(nome[i]);
-    }
     this->nome = nome;
 }
+
+Pessoa::~Pessoa() {}
 
 string Pessoa::getNome() const {
     return this->nome;
@@ -40,7 +40,6 @@ bool Pessoa::ehGeneroF() {
     }
 }
 
-// Pessoa::~Pessoa() { }
 
 ostream& operator << (ostream &os, const Pessoa *p) {
     return (os << p->getNome());

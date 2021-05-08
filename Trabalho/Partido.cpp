@@ -26,6 +26,8 @@ Partido::Partido(string& nome, string& sigla, int votosLegenda, int numero) {
     this->vagas = 0;
 }
 
+Partido::~Partido() {}
+
 string Partido::getNome() const {
     return nome;
 }
@@ -111,28 +113,23 @@ void Partido::ordenaCandidatos() {
         sort(this->candidatos.begin(), this->candidatos.end(), comparaVotos);
 }
 
-// Partido::~Partido() {
-//     for (Candidato *c : this->candidatos) {
-//         if (c != NULL)
-//             delete c;
-//     }
-// }
-// void Partido::liberaCandidatos() {
-// }
 
 ostream& operator << (ostream &os, const Partido* p) {
     string fraseCandidatoEleito = " candidato eleito";
     string fraseVoto = " voto";
     string fraseNominal = " nominal";
 
-    if (p->getQtdVagas() > 1) 
+    if (p->getQtdVagas() > 1) {
         fraseCandidatoEleito = " candidatos eleitos";
+    }
 
-    if (p->getVotosTotais() > 1)
+    if (p->getVotosTotais() > 1) {
         fraseVoto = " votos";
+    }
 
-    if (p->getVotosNominais() > 1)
+    if (p->getVotosNominais() > 1) {
         fraseNominal = " nominais";
+    }
 
 	return (os << p->getSigla() << " - " << to_string(p->getNumero()) << ", " << to_string(p->getVotosTotais()) << 
                  fraseVoto << " (" << to_string(p->getVotosNominais()) << fraseNominal << " e " << 

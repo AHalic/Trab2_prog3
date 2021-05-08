@@ -50,6 +50,11 @@ class Candidato: public Pessoa {
          */
         Candidato(string& nome, char genero, time_t& nascimento, string& situacao, 
             string& nomeUrna, int vT, int numero, string& destVoto, Partido *partido);
+        
+        /**
+         * Destrutor de Candidato
+         */
+        // virtual ~Candidato();
 
         /** 
          * Retorna a situacao do candidato.
@@ -113,7 +118,6 @@ class Candidato: public Pessoa {
          */
         string toString() const;
 
-        // virtual ~Candidato();
 
 };
 

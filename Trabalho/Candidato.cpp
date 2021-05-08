@@ -28,6 +28,8 @@ Candidato::Candidato(string& nome, char genero, time_t& nascimento, string& situ
     this->votosTotal = vT;
 }
 
+// Candidato::~Candidato() { }
+
 string Candidato::getSituacao() const {
     return this->situacao;
 }
@@ -87,7 +89,6 @@ bool comparaVotos(const Candidato *c1, const Candidato *c2) {
     return false;
 }
 
-// Candidato::~Candidato() { }
 
 ostream& operator << (ostream &os, const Candidato  *c) {
     string votos = " votos";

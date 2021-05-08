@@ -42,6 +42,11 @@ class Partido {
          * @param numero número referente a este Partido
          */
         Partido(string& nome, string& sigla, int votosLegenda, int numero);  
+
+        /**
+         * Destrutor de Partido
+         */
+        virtual ~Partido();
         
         /**
          * Retorna o nome deste Partido
@@ -109,12 +114,6 @@ class Partido {
          */
         void ordenaCandidatos();  
 
-        // virtual ~Partido();
-
-        /**
-         * Libera memoria dos candidatos de um partido
-         */
-        // void liberaCandidatos();
 };
 
 /**

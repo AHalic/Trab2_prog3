@@ -36,6 +36,11 @@ class Pessoa {
         Pessoa(string& nome, char genero, time_t& nascimento);  
 
         /**
+         * Destrutor de Pessoa
+         */
+        virtual ~Pessoa();
+
+        /**
          * Retorna o nome desta Pessoa
          * @return nome
          */   
@@ -65,8 +70,6 @@ class Pessoa {
          * @return idade 
          */
         int calculaIdade(time_t& data);
-
-        // virtual ~Pessoa();
 };
 
 /**

@@ -46,6 +46,11 @@ class Votos {
         Votos();
 
         /**
+         * Destrutor de Votos
+         */
+        // ~Votos();
+
+        /**
          * Retorna a quantidade de votos de legenda. 
          * @return quantidade de votos de legenda.
          */

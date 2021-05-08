@@ -40,8 +40,9 @@ namespace relatorio {
                 contador++;
             }
 
-            if(contador == eleicao.getVagas() + 1)
+            if(contador == eleicao.getVagas() + 1) {
                 break;
+            }
         }
 
         cout << endl;
@@ -56,8 +57,9 @@ namespace relatorio {
             cout << contador << " - " << c << endl;
             contador++;
 
-            if(contador == (eleicao.getVagas() + 1))
+            if(contador == (eleicao.getVagas() + 1)) {
                 break;
+            }
         }
 
         cout << endl;
@@ -78,8 +80,9 @@ namespace relatorio {
             
             contador++;
             
-            if (contador == eleicao.getVagas() + 1)
+            if (contador == eleicao.getVagas() + 1) {
                 break;
+            }
         }
 
         cout << endl;
@@ -94,15 +97,16 @@ namespace relatorio {
         cout << "(com sua posição no ranking de mais votados)" << endl;
         
         
-        if (eleicao.getVagas() <= eleicao.getCandidatos().size()) {
+        if (eleicao.getVagas() <= (int) eleicao.getCandidatos().size()) {
             for(Candidato *c: eleicao.getCandidatos()) {
 
                 if(c->ehEleito()) {
                     eleitos++;
                     
                     // So imprime os ultimos nEleitos (estes são os que se beneficiaram)
-                    if(eleicao.getVagas() - eleitos < nEleitos)
+                    if(eleicao.getVagas() - eleitos < nEleitos) {
                         cout << contador << " - " << c << endl;
+                    }
                 }
                 contador++;
             }  

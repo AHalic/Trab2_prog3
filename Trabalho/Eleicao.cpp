@@ -33,6 +33,15 @@ Eleicao::Eleicao(time_t& dataEleicao, vector<Partido*> partidos, vector<Candidat
     this->ordenaPartidos();
 }
 
+// Eleicao::~Eleicao() { 
+//     // for (Partido* p: partidos) {
+//     //     delete p;
+//     // }
+
+//     // for (Candidato* c: candidatos) {
+//     //     delete c;
+//     // }
+// }
         
 time_t Eleicao::getDataEleicao() const {
     return dataEleicao;
@@ -128,10 +137,12 @@ int Eleicao::getCandidatosPorIdade(int limMin, int limMax, time_t data) {
     return idadeCandidatos;
 }
 
-Eleicao::~Eleicao() { }
-//     for (Partido *p : partidos) {
-//         if (p != NULL) {
-//             delete p;
-//         }
-//     }
-// }
+void Eleicao::liberaInformacoes() {
+    for (Partido* p: partidos) {
+        delete p;
+    }
+
+    for (Candidato* c: candidatos) {
+        delete c;
+    }
+}

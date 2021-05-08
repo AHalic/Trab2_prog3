@@ -44,6 +44,9 @@ $(EXECUTAVEL): $(OBJETOS)
 run: $(EXECUTAVEL)
 	@./$(EXECUTAVEL) candidatos.csv partidos.csv 15/11/2020
 
+val:  $(EXECUTAVEL)
+	@valgrind ./$(EXECUTAVEL) candidatos.csv partidos.csv 15/11/2020
+	
 # comando para limpeza
 clean: 
 	@rm *.o vereadores *.csv *.txt
