@@ -10,15 +10,15 @@
 #ifndef ELEICAO_H
 #define ELEICAO_H
 
-#include "../include/Eleicao.h"
+#include "Eleicao.h"
 
 #include <string>
 #include <iostream>
 #include <ctime>
 #include <vector>
 
-#include "../include/Partido.h"
-#include "../include/Candidato.h"
+#include "Partido.h"
+#include "Candidato.h"
 
 using namespace std;
 
@@ -139,7 +139,8 @@ class Eleicao {
         /**
          * Libera memoria de um partido 
         **/
-        void liberaPartidos();
+        // void liberaPartidos();
+        virtual ~Eleicao();
 
 };
 

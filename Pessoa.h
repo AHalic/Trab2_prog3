@@ -65,6 +65,8 @@ class Pessoa {
          * @return idade 
          */
         int calculaIdade(time_t& data);
+
+        // virtual ~Pessoa();
 };
 
 /**

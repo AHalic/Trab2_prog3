@@ -8,10 +8,10 @@
 
 #include <locale>
 
-#include "../include/Eleicao.h"
-#include "../include/Leitura.h"
-#include "../include/Relatorio.h"
-#include "../include/DateUtils.h"
+#include "Eleicao.h"
+#include "Leitura.h"
+#include "Relatorio.h"
+#include "DateUtils.h"
 
 using namespace std;
 using namespace leitura;
@@ -80,7 +80,8 @@ int main (int argc, char *argv[]) {
     mostraVotosEleicao(eleicao);
     
     // libera memoria alocada por partido e candidato
-    eleicao.liberaPartidos();
+    // eleicao.liberaPartidos();
+    // delete &eleicao;
 
     // libera os allocs causado pelo locale("pt_BR.utf8")
     cout.imbue(locale());    

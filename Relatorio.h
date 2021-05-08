@@ -12,9 +12,9 @@
 
 #include <string>
 
-#include "../include/Eleicao.h"
-#include "../include/Candidato.h"
-#include "../include/Partido.h"
+#include "Eleicao.h"
+#include "Candidato.h"
+#include "Partido.h"
 
 using namespace std;
 

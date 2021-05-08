@@ -10,6 +10,7 @@
 #ifndef VOTOS_H
 #define VOTOS_H
 
+#include <iostream>
 using namespace std;
 
 /**

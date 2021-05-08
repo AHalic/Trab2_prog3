@@ -14,11 +14,11 @@
 #include <string>
 #include <vector>
 
-#include "../include/Partido.h"
-#include "../include/Candidato.h"
-#include "../include/DateUtils.h"
-#include "../include/Excecoes/ExLeituraCandidato.h"
-#include "../include/Excecoes/ExLeituraPartido.h"
+#include "Partido.h"
+#include "Candidato.h"
+#include "DateUtils.h"
+#include "ExLeituraCandidato.h"
+#include "ExLeituraPartido.h"
 
 using namespace std;
 

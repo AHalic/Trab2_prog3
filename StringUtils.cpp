@@ -9,7 +9,7 @@
  *      stringCompare code adapted from code sent by Eduardo Dalapicola.
  */
 
-#include "../include/StringUtils.h"
+#include "StringUtils.h"
 
 using namespace std;
 

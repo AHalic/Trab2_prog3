@@ -11,7 +11,7 @@
 #include <iostream>
 #include <string>
 
-#include "../../include/Excecoes/ExLeituraCandidato.h"
+#include "ExLeituraCandidato.h"
 
 using namespace std;
   

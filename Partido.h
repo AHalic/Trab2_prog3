@@ -14,7 +14,7 @@
 #include <string>
 #include <vector>
 
-#include "../include/Votos.h"
+#include "Votos.h"
 
 // declaracao devida as dependencias circulares 
 class Candidato;
@@ -109,10 +109,12 @@ class Partido {
          */
         void ordenaCandidatos();  
 
+        // virtual ~Partido();
+
         /**
          * Libera memoria dos candidatos de um partido
          */
-        void liberaCandidatos();
+        // void liberaCandidatos();
 };
 
 /**

@@ -1,49 +1,51 @@
-# Grupo: 
-# Beatriz Maia: 2019107651
-# Sophie Dilhon: 2019107591
+############
+# Exemplo de makefile
+# Prof. João Paulo A. Almeida
+# Programação III
+# 
+# A princípio, você não precisa alterar nada, mas aqui assume-se que o diretório atual
+# é o diretório onde estão os códigos fonte (.cpp).
+#
 
-CC		:= g++
-CFLAGS	:= -std=c++11
+# nome do compilador
+CPP = g++
 
-BIN		:= bin
-SRC		:= src
-INCLUDE	:= include
+# opções de compilação
+CFLAGS = -Wall -g
+CPPFLAGS = -std=c++11
 
-EXECUTABLE	:= vereadores
-SOURCEDIRS	:= $(shell find $(SRC) -type d)
-INCLUDEDIRS	:= $(shell find $(INCLUDE) -type d)
+# define lista de arquivos-fonte, assumindo que estão no diretório atual
+FONTES = $(wildcard *.cpp) 
 
-# Argumentos utilizados para testar codigo
+# define lista dos arquivos-objeto usando nomes da lista de arquivos-fonte
+OBJETOS = $(FONTES:.cpp=.o)
 
-# Caso teste do pdf
-ARG1 := candidatos.csv
-ARG2 := partidos.csv
-DATE := 15/11/2020
+# nome do arquivo executável
+EXECUTAVEL = vereadores
 
- 
-CINCLUDES	:= $(patsubst %,-I%, $(INCLUDEDIRS:%/=%))
-SOURCES		:= $(wildcard $(patsubst %,%/*.cpp, $(SOURCEDIRS)))
-OBJECTS		:= $(SOURCES:.cpp=.o)
+############ alvos
+#
+# use @ antes de todos os comandos, pois é necessário no script de teste
+#
 
-all: clean $(EXECUTABLE)
+# alvo principal é o executável  
+all: $(EXECUTAVEL)
 
-.PHONY: clean
-# Remove apenas os objetos
-cleanObjects:
-	-rm  */*.o
-	
-# Remove os objetos, o executável e arquivos csv e txt
+# para linkar o executável, precisamos dos arquivos-objetos
+$(EXECUTAVEL): $(OBJETOS)
+	@$(CPP) -o $@ $^ 
+
+# alvo para cada arquivo-objeto depende do código fonte
+# (observação, aqui não estamos capturando as dependências de arquivos .h)
+%.o: %.cpp
+	@$(CPP) $(CPPFLAGS) -c $(CFLAGS) $^
+
+# o comando para executar deve especificar sempre como parâmetro divulga.csv	
+run: $(EXECUTAVEL)
+	@./$(EXECUTAVEL) candidatos.csv partidos.csv 15/11/2020
+
+# comando para limpeza
 clean: 
-	@-rm $(OBJECTS) vereadores *.csv *.txt
-
-
-# Comandos para executar
-run: 
-	@./$(EXECUTABLE) $(ARG1) $(ARG2) $(DATE)
+	@rm *.o vereadores *.csv *.txt
 
 	
-$(EXECUTABLE): $(OBJECTS)
-	@$(CC) $(CFLAGS) $(CINCLUDES) $^ -o $@ $(LIBRARIES)
-
-val:
-	valgrind ./$(EXECUTABLE) $(ARG1) $(ARG2) $(DATE)

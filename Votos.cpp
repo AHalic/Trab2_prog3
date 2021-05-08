@@ -7,7 +7,7 @@
  * @since 03/05/2021
 **/
 
-#include "../include/Votos.h"
+#include "Votos.h"
 
 Votos::Votos(int votosLegenda) {
     this->votosLegenda = votosLegenda;

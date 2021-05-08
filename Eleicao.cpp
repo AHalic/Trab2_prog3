@@ -7,7 +7,7 @@
  * @since 04/05/2021
 **/
 
-#include "../include/Eleicao.h"
+#include "Eleicao.h"
 
 #include <string>
 #include <iostream>
@@ -15,8 +15,8 @@
 #include <vector>
 #include <algorithm>
 
-#include "../include/Partido.h"
-#include "../include/Candidato.h"
+#include "Partido.h"
+#include "Candidato.h"
 
 
 Eleicao::Eleicao(time_t& dataEleicao, vector<Partido*> partidos, vector<Candidato*> candidatos) {
@@ -128,11 +128,10 @@ int Eleicao::getCandidatosPorIdade(int limMin, int limMax, time_t data) {
     return idadeCandidatos;
 }
 
-void Eleicao::liberaPartidos() {
-    for (Partido *p : partidos) {
-        if (p != NULL) {
-            p->liberaCandidatos();
-            delete p;
-        }
-    }
-}
+Eleicao::~Eleicao() { }
+//     for (Partido *p : partidos) {
+//         if (p != NULL) {
+//             delete p;
+//         }
+//     }
+// }

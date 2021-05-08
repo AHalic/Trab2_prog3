@@ -7,7 +7,7 @@
  * @since 06/05/2021
 **/
 
-#include "../include/Leitura.h"
+#include "Leitura.h"
 
 #include <iostream>
 #include <fstream>
@@ -16,11 +16,11 @@
 #include <ctime>
 #include <vector>
 
-#include "../include/Verificador.h"
-#include "../include/DateUtils.h"
-#include "../include/StringUtils.h"
-#include "../include/Candidato.h"
-#include "../include/Partido.h"
+#include "Verificador.h"
+#include "DateUtils.h"
+#include "StringUtils.h"
+#include "Candidato.h"
+#include "Partido.h"
 
 using namespace cpp_util;
 using namespace verificador;

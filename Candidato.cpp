@@ -7,12 +7,12 @@
  * @since 03/05/2021
 **/
 
-#include "../include/Candidato.h"
+#include "Candidato.h"
 
 #include <string>
 #include <iostream>
 
-#include "../include/Partido.h"
+#include "Partido.h"
 
 using namespace std;
 
@@ -86,6 +86,8 @@ bool comparaVotos(const Candidato *c1, const Candidato *c2) {
 
     return false;
 }
+
+// Candidato::~Candidato() { }
 
 ostream& operator << (ostream &os, const Candidato  *c) {
     string votos = " votos";

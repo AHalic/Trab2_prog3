@@ -14,8 +14,8 @@
 #include <iostream>
 #include <string>
 
-#include "../include/Pessoa.h"
-#include "../include/Partido.h"
+#include "Pessoa.h"
+#include "Partido.h"
 
 #include <string>
 
@@ -112,6 +112,8 @@ class Candidato: public Pessoa {
          * @return Representação em String (curta).
          */
         string toString() const;
+
+        // virtual ~Candidato();
 
 };
 

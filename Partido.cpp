@@ -7,14 +7,14 @@
  * @since 05/05/2021
 **/
 
-#include "../include/Partido.h"
+#include "Partido.h"
 
 #include <iostream>
 #include <algorithm>
 #include <string>
 
-#include "../include/Votos.h"
-#include "../include/Candidato.h"
+#include "Votos.h"
+#include "Candidato.h"
 
 using namespace std;
 
@@ -111,12 +111,14 @@ void Partido::ordenaCandidatos() {
         sort(this->candidatos.begin(), this->candidatos.end(), comparaVotos);
 }
 
-void Partido::liberaCandidatos() {
-    for (Candidato *c : this->candidatos) {
-        if (c != NULL)
-            delete c;
-    }
-}
+// Partido::~Partido() {
+//     for (Candidato *c : this->candidatos) {
+//         if (c != NULL)
+//             delete c;
+//     }
+// }
+// void Partido::liberaCandidatos() {
+// }
 
 ostream& operator << (ostream &os, const Partido* p) {
     string fraseCandidatoEleito = " candidato eleito";

@@ -8,7 +8,7 @@
  * @since 06/05/2021
 **/
 
-#include "../include/Verificador.h"
+#include "Verificador.h"
 
 #include <string>
 #include <iostream>

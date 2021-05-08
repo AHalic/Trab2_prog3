@@ -7,7 +7,7 @@
  * @since 06/05/2021
 **/
 
-#include "../include/Relatorio.h"
+#include "Relatorio.h"
 
 #include <iostream>
 #include <iomanip>

@@ -7,7 +7,7 @@
  * @since 03/05/2021
 **/
 
-#include "../include/Pessoa.h"
+#include "Pessoa.h"
 #include <string>
 
 Pessoa::Pessoa(string& nome, char genero, time_t& nascimento) {
@@ -39,6 +39,8 @@ bool Pessoa::ehGeneroF() {
         return false;
     }
 }
+
+// Pessoa::~Pessoa() { }
 
 ostream& operator << (ostream &os, const Pessoa *p) {
     return (os << p->getNome());
