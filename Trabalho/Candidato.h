@@ -54,7 +54,7 @@ class Candidato: public Pessoa {
         /**
          * Destrutor de Candidato
          */
-        // virtual ~Candidato();
+        virtual ~Candidato();
 
         /** 
          * Retorna a situacao do candidato.

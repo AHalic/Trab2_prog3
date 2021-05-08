@@ -28,7 +28,7 @@ Candidato::Candidato(string& nome, char genero, time_t& nascimento, string& situ
     this->votosTotal = vT;
 }
 
-// Candidato::~Candidato() { }
+Candidato::~Candidato() { }
 
 string Candidato::getSituacao() const {
     return this->situacao;
