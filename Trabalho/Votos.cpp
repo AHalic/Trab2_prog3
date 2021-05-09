@@ -27,7 +27,7 @@ Votos::Votos() {
     this->votosTotais = 0;
 }
 
-// Votos::~Votos() {}
+Votos::~Votos() {}
 
 int Votos::getVotosLegenda() const {
     return votosLegenda;
