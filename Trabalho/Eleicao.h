@@ -46,11 +46,6 @@ class Eleicao {
         void liberaInformacoes();
 
         /**
-         * Destrutor de Eleicao
-        **/
-        // virtual ~Eleicao();
-
-        /**
          * Retorna a data em que a eleição foi realizada
          * @return data da eleição
          */  
