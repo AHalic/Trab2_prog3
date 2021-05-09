@@ -1,0 +1,89 @@
+Número de vagas: 13
+
+Vereadores eleitos:
+1 - JÚLIO MARIA DOS SANTOS / PEQUIÁ (PP, 1259 votos)
+2 - SANDRA CHRISTINA NEITZKE CHRIST / SANDRA NEITZKE (PSD, 744 votos)
+3 - JEFFERSON HAND / CHEFFINHO (PP, 721 votos)
+4 - JESSICA AGUIAR BARCELOS / JESSICA BARCELOS (PODE, 639 votos)
+5 - JOSÉ MARCOS SIMMER / MARQUINHOS SIMMER (CIDADANIA, 637 votos)
+6 - FRANCISCO SUTIL BRAGA / CHICO BRAGA (PSD, 578 votos)
+7 - SILVESTRE ALVES DE OLIVEIRA / SILVESTRE OLIVEIRA (REPUBLICANOS, 547 votos)
+8 - GILMAR CANAL / GIL CANAL (PP, 515 votos)
+9 - EDSON LUIZ PAGANINI / EDINHO PAGANINI (PATRIOTA, 460 votos)
+10 - GILMAR LUIZ BORLOT / CAPITAO GILMAR BORLOT (PSD, 448 votos)
+11 - ARNO SCHMIDT / ARNO SCHMIDT (PDT, 266 votos)
+12 - LORRAINE MARIA LAMPIER PIMENTA / LORRAINE DA AMAR (REDE, 247 votos)
+13 - JOHNEI CLAÚDIO DEGEN / JOHNEI DEGEN (PSDB, 239 votos)
+
+Candidatos mais votados (em ordem decrescente de votação e respeitando número de vagas):
+1 - JÚLIO MARIA DOS SANTOS / PEQUIÁ (PP, 1259 votos)
+2 - SANDRA CHRISTINA NEITZKE CHRIST / SANDRA NEITZKE (PSD, 744 votos)
+3 - JEFFERSON HAND / CHEFFINHO (PP, 721 votos)
+4 - JESSICA AGUIAR BARCELOS / JESSICA BARCELOS (PODE, 639 votos)
+5 - JOSÉ MARCOS SIMMER / MARQUINHOS SIMMER (CIDADANIA, 637 votos)
+6 - FRANCISCO SUTIL BRAGA / CHICO BRAGA (PSD, 578 votos)
+7 - SILVESTRE ALVES DE OLIVEIRA / SILVESTRE OLIVEIRA (REPUBLICANOS, 547 votos)
+8 - GILMAR CANAL / GIL CANAL (PP, 515 votos)
+9 - EDSON LUIZ PAGANINI / EDINHO PAGANINI (PATRIOTA, 460 votos)
+10 - EDIVALDO JOSÉ ERLACHER / EDIVALDO ERLACHER (CIDADANIA, 455 votos)
+11 - GILMAR LUIZ BORLOT / CAPITAO GILMAR BORLOT (PSD, 448 votos)
+12 - ADILSON FONSECA / TUTU DO CACHORRO QUENTE (CIDADANIA, 435 votos)
+13 - MANOEL STREY / MANOEL STREY (PATRIOTA, 401 votos)
+
+Teriam sido eleitos se a votação fosse majoritária, e não foram eleitos:
+(com sua posição no ranking de mais votados)
+10 - EDIVALDO JOSÉ ERLACHER / EDIVALDO ERLACHER (CIDADANIA, 455 votos)
+12 - ADILSON FONSECA / TUTU DO CACHORRO QUENTE (CIDADANIA, 435 votos)
+13 - MANOEL STREY / MANOEL STREY (PATRIOTA, 401 votos)
+
+Eleitos, que se beneficiaram do sistema proporcional:
+(com sua posição no ranking de mais votados)
+23 - ARNO SCHMIDT / ARNO SCHMIDT (PDT, 266 votos)
+26 - LORRAINE MARIA LAMPIER PIMENTA / LORRAINE DA AMAR (REDE, 247 votos)
+27 - JOHNEI CLAÚDIO DEGEN / JOHNEI DEGEN (PSDB, 239 votos)
+
+Votação dos partidos e número de candidatos eleitos:
+1 - PP - 11, 3620 votos (3159 nominais e 461 de legenda), 3 candidatos eleitos
+2 - PSD - 55, 3484 votos (3414 nominais e 70 de legenda), 3 candidatos eleitos
+3 - CIDADANIA - 23, 1900 votos (1860 nominais e 40 de legenda), 1 candidato eleito
+4 - PATRIOTA - 51, 1443 votos (1422 nominais e 21 de legenda), 1 candidato eleito
+5 - REDE - 18, 1415 votos (1399 nominais e 16 de legenda), 1 candidato eleito
+6 - PSDB - 45, 1280 votos (1163 nominais e 117 de legenda), 1 candidato eleito
+7 - REPUBLICANOS - 10, 1264 votos (1134 nominais e 130 de legenda), 1 candidato eleito
+8 - PDT - 12, 1127 votos (1031 nominais e 96 de legenda), 1 candidato eleito
+9 - PODE - 19, 1097 votos (1084 nominais e 13 de legenda), 1 candidato eleito
+10 - PV - 43, 1031 votos (946 nominais e 85 de legenda), 0 candidato eleito
+11 - PL - 22, 795 votos (758 nominais e 37 de legenda), 0 candidato eleito
+12 - PTB - 14, 480 votos (468 nominais e 12 de legenda), 0 candidato eleito
+13 - PSB - 40, 437 votos (424 nominais e 13 de legenda), 0 candidato eleito
+
+Primeiro e último colocados de cada partido:
+1 - PP - 11, PEQUIÁ (11789, 1259 votos) / RENATA CARRARETO (11099, 8 votos)
+2 - PSD - 55, SANDRA NEITZKE (55789, 744 votos) / VANDELINO ALEMAO (55222, 26 votos)
+3 - PODE - 19, JESSICA BARCELOS (19000, 639 votos) / SOLANGE VELTEN (19789, 7 votos)
+4 - CIDADANIA - 23, MARQUINHOS SIMMER (23123, 637 votos) / SUELY DO CHACAL (23966, 2 votos)
+5 - REPUBLICANOS - 10, SILVESTRE OLIVEIRA (10100, 547 votos) / MAURIZA CARDOSO (10200, 4 votos)
+6 - PATRIOTA - 51, EDINHO PAGANINI (51234, 460 votos) / MICAELA (51000, 7 votos)
+7 - PV - 43, PROFESSOR HÉLIO (43000, 387 votos) / JHULY RODRIGUES (43012, 9 votos)
+8 - PTB - 14, EGNER HEHR (14500, 280 votos) / LEILA (14123, 70 votos)
+9 - PDT - 12, ARNO SCHMIDT (12789, 266 votos) / ODAIR JASTROW (12777, 22 votos)
+10 - PL - 22, ALDY BORGES FILHO (22555, 265 votos) / BEN SILVER (22190, 14 votos)
+11 - REDE - 18, LORRAINE DA AMAR (18888, 247 votos) / MARCIA REIS (18666, 16 votos)
+12 - PSDB - 45, JOHNEI DEGEN (45555, 239 votos) / DIONILDA RIBETT (45700, 9 votos)
+13 - PSB - 40, ALEX AMANCIO (40345, 180 votos) / WILSON XAVIER DE MAGALHAES (40140, 1 voto)
+
+Eleitos, por faixa etária (na data da eleição):
+      Idade < 30: 2 (15,38%)
+30 <= Idade < 40: 2 (15,38%)
+40 <= Idade < 50: 2 (15,38%)
+50 <= Idade < 60: 4 (30,77%)
+60 <= Idade     : 3 (23,08%)
+
+Eleitos, por sexo:
+Feminino:  3 (23,08%)
+Masculino: 10 (76,92%)
+
+Total de votos válidos:    19373
+Total de votos nominais:   18262 (94,27%)
+Total de votos de Legenda: 1111 (5,73%)
+

@@ -1,0 +1,2 @@
+Erro de parsing de string para time_t.
+make: *** [Makefile:45: run] Error 1

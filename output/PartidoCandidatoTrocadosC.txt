@@ -1,0 +1,4 @@
+Exceção encontrada!
+
+Partidos vazios
+make: *** [Makefile:45: run] Error 1

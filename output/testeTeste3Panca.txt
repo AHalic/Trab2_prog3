@@ -1,0 +1,77 @@
+Número de vagas: 11
+
+Vereadores eleitos:
+1 - GUMERCINDO MACEDO GONÇALVES JUNIOR / JUNINHO (PDT, 602 votos)
+2 - ANDERSON COUTO / PERA (PODE, 514 votos)
+3 - MARCIO MARQUES DOS REIS / MARCIO BERALDO (PODE, 488 votos)
+4 - NAIR LOOSE / NAIR LOOSE EGGERT (PSB, 445 votos)
+5 - JUNIELTON ALVES RODRIGUES / JUNINHO TATÁ (CIDADANIA, 390 votos)
+6 - OTNIEL CARLOS DE OLIVEIRA / OTNIEL (PDT, 358 votos)
+7 - ROBSON LUIZ SCHUAITH / ROBINHO SCHUATZ (PATRIOTA, 349 votos)
+8 - JOSÉ LÚCIO MARTINS DUTRA / JOSÉ LÚCIO (REPUBLICANOS, 343 votos)
+9 - RODRIGO ENTRINGER ROQUE / RODRIGO ENTRINGER (PMN, 328 votos)
+10 - LEILSO MARCOS DA SILVA / LEILSO SCHUMACHER (PODE, 287 votos)
+11 - NOEME MENDES DE OLIVEIRA / NOEME MENDES (PDT, 270 votos)
+
+Candidatos mais votados (em ordem decrescente de votação e respeitando número de vagas):
+1 - GUMERCINDO MACEDO GONÇALVES JUNIOR / JUNINHO (PDT, 602 votos)
+2 - ANDERSON COUTO / PERA (PODE, 514 votos)
+3 - MARCIO MARQUES DOS REIS / MARCIO BERALDO (PODE, 488 votos)
+4 - NAIR LOOSE / NAIR LOOSE EGGERT (PSB, 445 votos)
+5 - JUNIELTON ALVES RODRIGUES / JUNINHO TATÁ (CIDADANIA, 390 votos)
+6 - OTNIEL CARLOS DE OLIVEIRA / OTNIEL (PDT, 358 votos)
+7 - ROBSON LUIZ SCHUAITH / ROBINHO SCHUATZ (PATRIOTA, 349 votos)
+8 - JOSÉ LÚCIO MARTINS DUTRA / JOSÉ LÚCIO (REPUBLICANOS, 343 votos)
+9 - JUCIMARIO DE OLIVEIRA LANGAME / BILEU (CIDADANIA, 336 votos)
+10 - RODRIGO ENTRINGER ROQUE / RODRIGO ENTRINGER (PMN, 328 votos)
+11 - LUIZ CARLOS DE SOUZA / FIZIQUINHO (CIDADANIA, 309 votos)
+
+Teriam sido eleitos se a votação fosse majoritária, e não foram eleitos:
+(com sua posição no ranking de mais votados)
+9 - JUCIMARIO DE OLIVEIRA LANGAME / BILEU (CIDADANIA, 336 votos)
+11 - LUIZ CARLOS DE SOUZA / FIZIQUINHO (CIDADANIA, 309 votos)
+
+Eleitos, que se beneficiaram do sistema proporcional:
+(com sua posição no ranking de mais votados)
+12 - LEILSO MARCOS DA SILVA / LEILSO SCHUMACHER (PODE, 287 votos)
+14 - NOEME MENDES DE OLIVEIRA / NOEME MENDES (PDT, 270 votos)
+
+Votação dos partidos e número de candidatos eleitos:
+1 - PDT - 12, 2412 votos (2198 nominais e 214 de legenda), 3 candidatos eleitos
+2 - PODE - 19, 2309 votos (2262 nominais e 47 de legenda), 3 candidatos eleitos
+3 - CIDADANIA - 23, 1473 votos (1446 nominais e 27 de legenda), 1 candidato eleito
+4 - PATRIOTA - 51, 1390 votos (1367 nominais e 23 de legenda), 1 candidato eleito
+5 - PSB - 40, 1257 votos (1100 nominais e 157 de legenda), 1 candidato eleito
+6 - PMN - 33, 945 votos (905 nominais e 40 de legenda), 1 candidato eleito
+7 - REPUBLICANOS - 10, 920 votos (888 nominais e 32 de legenda), 1 candidato eleito
+8 - PSD - 55, 391 votos (327 nominais e 64 de legenda), 0 candidato eleito
+9 - PSDB - 45, 360 votos (347 nominais e 13 de legenda), 0 candidato eleito
+10 - DC - 27, 41 votos (38 nominais e 3 de legenda), 0 candidato eleito
+
+Primeiro e último colocados de cada partido:
+1 - PDT - 12, JUNINHO (12333, 602 votos) / LUCAS MAAS (12555, 21 votos)
+2 - PODE - 19, PERA (19123, 514 votos) / JULINHA (19277, 4 votos)
+3 - PSB - 40, NAIR LOOSE EGGERT (40111, 445 votos) / DIANA (40022, 7 votos)
+4 - CIDADANIA - 23, JUNINHO TATÁ (23999, 390 votos) / ROBERTA DO RAMIRO (23555, 2 votos)
+5 - PATRIOTA - 51, ROBINHO SCHUATZ (51012, 349 votos) / ZÉ DO PÃO (51123, 5 votos)
+6 - REPUBLICANOS - 10, JOSÉ LÚCIO (10999, 343 votos) / CELIA FERNANDES (10555, 0 voto)
+7 - PMN - 33, RODRIGO ENTRINGER (33000, 328 votos) / GILMAR DA SILVA (ABENÇOADO) (33126, 8 votos)
+8 - PSDB - 45, CHICO HONÓRIO (45000, 218 votos) / MANOEL POLICIAL (45123, 7 votos)
+9 - PSD - 55, JAMIRO (55555, 103 votos) / MARILINDA (55333, 1 voto)
+10 - DC - 27, MANASSES INACIO (27000, 20 votos) / ALCENIR KUSTER (27333, 18 votos)
+
+Eleitos, por faixa etária (na data da eleição):
+      Idade < 30: 0 (0,00%)
+30 <= Idade < 40: 2 (18,18%)
+40 <= Idade < 50: 6 (54,55%)
+50 <= Idade < 60: 2 (18,18%)
+60 <= Idade     : 1 (9,09%)
+
+Eleitos, por sexo:
+Feminino:  2 (18,18%)
+Masculino: 9 (81,82%)
+
+Total de votos válidos:    11498
+Total de votos nominais:   10878 (94,61%)
+Total de votos de Legenda: 620 (5,39%)
+

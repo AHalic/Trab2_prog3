@@ -1,0 +1,77 @@
+Número de vagas: 11
+
+Vereadores eleitos:
+1 - TEREZINHA VIZZONI MEZADRI / TEREZA MEZADRI (PSB, 709 votos)
+2 - RENAN DE OLIVEIRA DELFINO / RENAN DELFINO (PP, 676 votos)
+3 - RENATO LORENCINI / RENATO LORENCINI (PSB, 658 votos)
+4 - EDSON VANDO SOUZA / EDINHO É DEMAIS (MDB, 607 votos)
+5 - SERGIO LUIZ DA SILVA JESUS / SERGINHO (PSD, 534 votos)
+6 - ROBSON MATTOS DOS SANTOS / PROFESSOR ROBINHO (AVANTE, 432 votos)
+7 - NILTON CEZAR SIMÕES BRANDÃO / NILTINHO (PSC, 398 votos)
+8 - RODRIGO ADOLFO SEMEDO / RODRIGO SEMEDO (PP, 394 votos)
+9 - ANGELA MARCIA CYPRIANO ASSAD / MARCIA CYPRIANO ASSAD (PODE, 388 votos)
+10 - PABLO FLORENTINO PEREIRA / PABLO FLORENTINO (PMN, 363 votos)
+11 - CLEBER OLIVEIRA DA SILVA / CLEBER POMBO (PSD, 355 votos)
+
+Candidatos mais votados (em ordem decrescente de votação e respeitando número de vagas):
+1 - TEREZINHA VIZZONI MEZADRI / TEREZA MEZADRI (PSB, 709 votos)
+2 - RENAN DE OLIVEIRA DELFINO / RENAN DELFINO (PP, 676 votos)
+3 - RENATO LORENCINI / RENATO LORENCINI (PSB, 658 votos)
+4 - JOÃO ORLANDO DA SILVA SIMÕES / JOÃO ORLANDO (PSB, 617 votos)
+5 - EDSON VANDO SOUZA / EDINHO É DEMAIS (MDB, 607 votos)
+6 - SERGIO LUIZ DA SILVA JESUS / SERGINHO (PSD, 534 votos)
+7 - VALBER JOSÉ SALARINI / VALBER SALARINI (MDB, 515 votos)
+8 - ROBSON MATTOS DOS SANTOS / PROFESSOR ROBINHO (AVANTE, 432 votos)
+9 - JOAO CARLOS SIMOES NUNES / CARLINHOS (MDB, 414 votos)
+10 - NILTON CEZAR SIMÕES BRANDÃO / NILTINHO (PSC, 398 votos)
+11 - RODRIGO ADOLFO SEMEDO / RODRIGO SEMEDO (PP, 394 votos)
+
+Teriam sido eleitos se a votação fosse majoritária, e não foram eleitos:
+(com sua posição no ranking de mais votados)
+4 - JOÃO ORLANDO DA SILVA SIMÕES / JOÃO ORLANDO (PSB, 617 votos)
+7 - VALBER JOSÉ SALARINI / VALBER SALARINI (MDB, 515 votos)
+9 - JOAO CARLOS SIMOES NUNES / CARLINHOS (MDB, 414 votos)
+
+Eleitos, que se beneficiaram do sistema proporcional:
+(com sua posição no ranking de mais votados)
+12 - ANGELA MARCIA CYPRIANO ASSAD / MARCIA CYPRIANO ASSAD (PODE, 388 votos)
+14 - PABLO FLORENTINO PEREIRA / PABLO FLORENTINO (PMN, 363 votos)
+16 - CLEBER OLIVEIRA DA SILVA / CLEBER POMBO (PSD, 355 votos)
+
+Votação dos partidos e número de candidatos eleitos:
+1 - PSD - 55, 3128 votos (3091 nominais e 37 de legenda), 2 candidatos eleitos
+2 - PSB - 40, 2828 votos (2607 nominais e 221 de legenda), 2 candidatos eleitos
+3 - PP - 11, 2677 votos (2644 nominais e 33 de legenda), 2 candidatos eleitos
+4 - PMN - 33, 2128 votos (2087 nominais e 41 de legenda), 1 candidato eleito
+5 - MDB - 15, 1903 votos (1871 nominais e 32 de legenda), 1 candidato eleito
+6 - AVANTE - 70, 1894 votos (1785 nominais e 109 de legenda), 1 candidato eleito
+7 - PSC - 20, 1714 votos (1694 nominais e 20 de legenda), 1 candidato eleito
+8 - PODE - 19, 1181 votos (1030 nominais e 151 de legenda), 1 candidato eleito
+9 - PT - 13, 68 votos (58 nominais e 10 de legenda), 0 candidato eleito
+
+Primeiro e último colocados de cada partido:
+1 - PSB - 40, TEREZA MEZADRI (40123, 709 votos) / DÔRA (40666, 21 votos)
+2 - PP - 11, RENAN DELFINO (11456, 676 votos) / PASTORA ELIANE (11123, 12 votos)
+3 - MDB - 15, EDINHO É DEMAIS (15555, 607 votos) / DANI LINO (15015, 16 votos)
+4 - PSD - 55, SERGINHO (55100, 534 votos) / RENATA (55777, 7 votos)
+5 - AVANTE - 70, PROFESSOR ROBINHO (70123, 432 votos) / MARIA JOSÉ (70005, 1 voto)
+6 - PSC - 20, NILTINHO (20040, 398 votos) / BRUNO DA FARMACIA (20333, 17 votos)
+7 - PODE - 19, MARCIA CYPRIANO ASSAD (19555, 388 votos) / JOZIAS PEREIRA (19445, 0 voto)
+8 - PMN - 33, PABLO FLORENTINO (33123, 363 votos) / VALDINEIA VASCO MACHADO (33500, 1 voto)
+9 - PT - 13, ADEMAR PEREIRA (PREA) (13100, 51 votos) / THACYAH BARCELLOS (13240, 7 votos)
+
+Eleitos, por faixa etária (na data da eleição):
+      Idade < 30: 0 (0,00%)
+30 <= Idade < 40: 5 (45,45%)
+40 <= Idade < 50: 3 (27,27%)
+50 <= Idade < 60: 3 (27,27%)
+60 <= Idade     : 0 (0,00%)
+
+Eleitos, por sexo:
+Feminino:  2 (18,18%)
+Masculino: 9 (81,82%)
+
+Total de votos válidos:    17521
+Total de votos nominais:   16867 (96,27%)
+Total de votos de Legenda: 654 (3,73%)
+
