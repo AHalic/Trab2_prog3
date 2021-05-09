@@ -1,0 +1,64 @@
+Número de vagas: 9
+
+Vereadores eleitos:
+1 - HELIO FRANCISCO DE PAULA / HELIO MOTORISTA DA SAUDE (REPUBLICANOS, 304 votos)
+2 - RONALDO NEVES DOS SANTOS / RONALDO NEVES (REPUBLICANOS, 297 votos)
+3 - JUCELIO LOPES ESTEVÃO / JUCELIO CATRECO (PV, 294 votos)
+4 - OSEAS RODRIGUES DOS SANTOS / OSÉAS (PP, 228 votos)
+5 - MARCO ANTONIO BATISTA OLIVEIRA / BOCÃO DO POSTO (PSB, 209 votos)
+6 - MARCIANO EMIDIO DA SILVA / MARCIANO DO COBRAL (PP, 180 votos)
+7 - ANTONIO MIRANDA / TÕE MIRANDA (PV, 157 votos)
+8 - JOSE MANOEL GONÇALVES / ZÉ MANOEL (PP, 142 votos)
+9 - SEBASTÃO PEREIRA DA CUNHA NETO / SEBASTIÃO MATEUS (PSD, 108 votos)
+
+Candidatos mais votados (em ordem decrescente de votação e respeitando número de vagas):
+1 - HELIO FRANCISCO DE PAULA / HELIO MOTORISTA DA SAUDE (REPUBLICANOS, 304 votos)
+2 - RONALDO NEVES DOS SANTOS / RONALDO NEVES (REPUBLICANOS, 297 votos)
+3 - JUCELIO LOPES ESTEVÃO / JUCELIO CATRECO (PV, 294 votos)
+4 - OSEAS RODRIGUES DOS SANTOS / OSÉAS (PP, 228 votos)
+5 - MARCO ANTONIO BATISTA OLIVEIRA / BOCÃO DO POSTO (PSB, 209 votos)
+6 - MARCIANO EMIDIO DA SILVA / MARCIANO DO COBRAL (PP, 180 votos)
+7 - ANTONIO MIRANDA / TÕE MIRANDA (PV, 157 votos)
+8 - JOSE WALMIR GUEDES / GRILO (PV, 155 votos)
+9 - JOSE MANOEL GONÇALVES / ZÉ MANOEL (PP, 142 votos)
+
+Teriam sido eleitos se a votação fosse majoritária, e não foram eleitos:
+(com sua posição no ranking de mais votados)
+8 - JOSE WALMIR GUEDES / GRILO (PV, 155 votos)
+
+Eleitos, que se beneficiaram do sistema proporcional:
+(com sua posição no ranking de mais votados)
+12 - SEBASTÃO PEREIRA DA CUNHA NETO / SEBASTIÃO MATEUS (PSD, 108 votos)
+
+Votação dos partidos e número de candidatos eleitos:
+1 - PP - 11, 953 votos (930 nominais e 23 de legenda), 3 candidatos eleitos
+2 - PV - 43, 814 votos (801 nominais e 13 de legenda), 2 candidatos eleitos
+3 - REPUBLICANOS - 10, 652 votos (639 nominais e 13 de legenda), 2 candidatos eleitos
+4 - PSB - 40, 604 votos (540 nominais e 64 de legenda), 1 candidato eleito
+5 - PSD - 55, 366 votos (330 nominais e 36 de legenda), 1 candidato eleito
+6 - PODE - 19, 134 votos (71 nominais e 63 de legenda), 0 candidato eleito
+
+
+Primeiro e último colocados de cada partido:
+1 - REPUBLICANOS - 10, HELIO MOTORISTA DA SAUDE (10123, 304 votos) / BRUNA DA APARECIDA (10222, 2 votos)
+2 - PV - 43, JUCELIO CATRECO (43123, 294 votos) / CIDINHA DO BRAGUINHA (43666, 7 votos)
+3 - PP - 11, OSÉAS (11111, 228 votos) / MARINETE DO ZEZIM DOCRIDE (11028, 4 votos)
+4 - PSB - 40, BOCÃO DO POSTO (40222, 209 votos) / CIDA FÉLIX (40999, 6 votos)
+5 - PSD - 55, SEBASTIÃO MATEUS (55556, 108 votos) / LUIZ DO GUINEL (55557, 13 votos)
+6 - PODE - 19, AURECIL MURUCI (19000, 33 votos) / ROBSON SILVA CANTOR (19455, 10 votos)
+
+Eleitos, por faixa etária (na data da eleição):
+      Idade < 30: 0 (0,00%)
+30 <= Idade < 40: 4 (44,44%)
+40 <= Idade < 50: 3 (33,33%)
+50 <= Idade < 60: 2 (22,22%)
+60 <= Idade     : 0 (0,00%)
+
+Eleitos, por sexo:
+Feminino:  0 (0,00%)
+Masculino: 9 (100,00%)
+
+Total de votos válidos:    3523
+Total de votos nominais:   3311 (93,98%)
+Total de votos de Legenda: 212 (6,02%)
+

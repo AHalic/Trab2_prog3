@@ -1,0 +1,62 @@
+Número de vagas: 9
+
+Vereadores eleitos:
+1 - JOVANDER COMERIO / JO COMERIO (REPUBLICANOS, 729 votos)
+2 - EMILIO GAVA / PROFESSOR EMILIO GAVA (PSDB, 569 votos)
+3 - JOSUÉ BATISTA DA SILVA / SARGENTO BATISTA (CIDADANIA, 539 votos)
+4 - DOUGLAS BADIANI / DOUGLAS BADIANI (PSB, 390 votos)
+5 - PAULO COSTA / PAULINHO COSTA (PP, 373 votos)
+6 - ALCIONE BOLDRINI MONECHI / ALCIONE (PP, 348 votos)
+7 - SILVANO JOSÉ DONDONI / SILVANO DONDONI (PSB, 335 votos)
+8 - ADILSON REGGIANI / ADILSON REGGIANI (PSB, 291 votos)
+9 - JOSIANE CRISTINA DA SILVA PASSAMANI / JOSI PASSAMANI (CIDADANIA, 283 votos)
+
+Candidatos mais votados (em ordem decrescente de votação e respeitando número de vagas):
+1 - JOVANDER COMERIO / JO COMERIO (REPUBLICANOS, 729 votos)
+2 - EMILIO GAVA / PROFESSOR EMILIO GAVA (PSDB, 569 votos)
+3 - JOSUÉ BATISTA DA SILVA / SARGENTO BATISTA (CIDADANIA, 539 votos)
+4 - DOUGLAS BADIANI / DOUGLAS BADIANI (PSB, 390 votos)
+5 - PAULO COSTA / PAULINHO COSTA (PP, 373 votos)
+6 - ALCIONE BOLDRINI MONECHI / ALCIONE (PP, 348 votos)
+7 - SILVANO JOSÉ DONDONI / SILVANO DONDONI (PSB, 335 votos)
+8 - ADILSON REGGIANI / ADILSON REGGIANI (PSB, 291 votos)
+9 - JOSIANE CRISTINA DA SILVA PASSAMANI / JOSI PASSAMANI (CIDADANIA, 283 votos)
+
+Teriam sido eleitos se a votação fosse majoritária, e não foram eleitos:
+(com sua posição no ranking de mais votados)
+
+Eleitos, que se beneficiaram do sistema proporcional:
+(com sua posição no ranking de mais votados)
+
+Votação dos partidos e número de candidatos eleitos:
+1 - PSB - 40, 2205 votos (1959 nominais e 246 de legenda), 3 candidatos eleitos
+2 - CIDADANIA - 23, 2022 votos (1986 nominais e 36 de legenda), 2 candidatos eleitos
+3 - PP - 11, 1364 votos (1331 nominais e 33 de legenda), 2 candidatos eleitos
+4 - REPUBLICANOS - 10, 1323 votos (1307 nominais e 16 de legenda), 1 candidato eleito
+5 - PSDB - 45, 1296 votos (1183 nominais e 113 de legenda), 1 candidato eleito
+6 - PL - 22, 25 votos (18 nominais e 7 de legenda), 0 candidato eleito
+
+
+Primeiro e último colocados de cada partido:
+1 - REPUBLICANOS - 10, JO COMERIO (10777, 729 votos) / LENE (10180, 6 votos)
+2 - PSDB - 45, PROFESSOR EMILIO GAVA (45123, 569 votos) / ROBSON DE SAO MARCOS (45999, 15 votos)
+3 - CIDADANIA - 23, SARGENTO BATISTA (23190, 539 votos) / GUIOMAR DOS SANTOS (23137, 14 votos)
+4 - PSB - 40, DOUGLAS BADIANI (40789, 390 votos) / ERICA GARI (40345, 13 votos)
+5 - PP - 11, PAULINHO COSTA (11123, 373 votos) / JOÃO ROCHA DA SILVA (11456, 8 votos)
+6 - PL - 22, AGUINALDO BARBOSA (22222, 11 votos) / MARIANA DO FABRIANO (22000, 7 votos)
+
+Eleitos, por faixa etária (na data da eleição):
+      Idade < 30: 0 (0,00%)
+30 <= Idade < 40: 1 (11,11%)
+40 <= Idade < 50: 6 (66,67%)
+50 <= Idade < 60: 2 (22,22%)
+60 <= Idade     : 0 (0,00%)
+
+Eleitos, por sexo:
+Feminino:  2 (22,22%)
+Masculino: 7 (77,78%)
+
+Total de votos válidos:    8235
+Total de votos nominais:   7784 (94,52%)
+Total de votos de Legenda: 451 (5,48%)
+

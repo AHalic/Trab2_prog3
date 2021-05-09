@@ -1,0 +1,2 @@
+Arquivo incorreto
+Informações não possibilitadas de inicializar.
