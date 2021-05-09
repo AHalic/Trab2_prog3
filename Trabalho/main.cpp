@@ -80,20 +80,10 @@ int main (int argc, char *argv[]) {
     mostraVotosEleicao(eleicao);
     
     // libera memoria alocada por partido e candidato
-    // eleicao.liberaPartidos();
-    // delete &eleicao;
+    eleicao.liberaInformacoes();
 
     // libera os allocs causado pelo locale("pt_BR.utf8")
     cout.imbue(locale());    
 
-    // for (Partido* p: partidos) {
-    //     delete p;
-    // }
-
-    // for (Candidato* c: candidatos) {
-    //     delete c;
-    // }
-    eleicao.liberaInformacoes();
-    
     return 0;
 }
