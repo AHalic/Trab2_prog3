@@ -126,6 +126,8 @@ class Candidato: public Pessoa {
  * das producoes diretamente pelo cout.
  * @relatesalso Candidato
  * @return formato de candidato
+ * 
+ * @overload
  */
 ostream& operator << (ostream &os, const Candidato *c);
 

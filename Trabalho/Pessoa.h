@@ -77,6 +77,8 @@ class Pessoa {
  * das producoes diretamente pelo cout.
  * @relatesalso Pessoa
  * @return nome desta Pessoa em maiúsculo
+ * 
+ * @overload
  */
 ostream& operator << (ostream &os, const Pessoa *p);
 

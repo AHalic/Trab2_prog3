@@ -29,6 +29,10 @@ namespace leitura {
      * não adicionados ao vetor de partidos.
      * @param caminho string do caminho do arquivo de partidos.csv
      * @return Vetor de partidos.
+     * 
+     * @throws runtime_error se nao foi encontrado o arquivo em "caminho"
+     * @throws ExLeituraPartido se o arquivo nao possui informacoes 
+     *         no formato correto ou se ele estiver vazio
      */
     vector<Partido*> lePartidos(string caminho);
 
@@ -39,6 +43,10 @@ namespace leitura {
      * @param caminho string do caminho do arquivo de candidato.csv
      * @param partidos - vetor de partidos
      * @return Vetor de candidatos.
+     * 
+     * @throws runtime_error se nao foi encontrado arquivo em "caminho" 
+     * @throws ExLeituraCandidato se o arquivo nao possui informacoes
+     *         no formato correto ou se ele estiver vazio
      */
     vector<Candidato*> leCandidatos(string caminho, vector<Partido*> partidos);
 }

@@ -121,6 +121,8 @@ class Partido {
  * das producoes diretamente pelo cout.
  * @relatesalso partido
  * @return formato de partido
+ * 
+ * @overload
  */
 ostream& operator << (ostream &os, const Partido *p);
 
